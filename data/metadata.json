@@ -1,0 +1,30 @@
+{
+  "mode": "live",
+  "generated_at": "2026-09-21T07:00:57.689452+00:00",
+  "title": "Monitor de Riesgo Financiero",
+  "subtitle": "Información oficial SEPS · Segmento 1",
+  "default_ruc": "1790866084001",
+  "default_entity_name": "COOPERATIVA DE AHORRO Y CREDITO POLICIA NACIONAL LIMITADA",
+  "segment": 1,
+  "inference": {
+    "enabled": false,
+    "n_entities": 52,
+    "n_positive_events": 0,
+    "minimum_positive_events": 12,
+    "minimum_entities": 25
+  },
+  "publication": {
+    "author": "",
+    "source_name": "Superintendencia de Economía Popular y Solidaria (SEPS)",
+    "source_label": "Portal Estadístico SEPS",
+    "independent_analysis": true,
+    "disclaimer": "Este sitio presenta un análisis académico e informativo, de elaboración independiente, basado en información pública de la SEPS. No constituye una calificación oficial de riesgo, una afirmación de insolvencia o default, recomendación financiera, asesoría de inversión ni invitación a retirar o colocar fondos. Los indicadores derivados son cálculos propios y deben interpretarse junto con la metodología, supuestos y limitaciones.",
+    "academic_use": true,
+    "academic_notice": "ANÁLISIS ACADÉMICO E INFORMATIVO · Elaboración independiente sobre información pública de la SEPS."
+  },
+  "dashboard_defaults": {
+    "default_period": "all",
+    "default_aggregation": "quarterly",
+    "default_visualization": "candles"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "entity": {
+    "ruc": "0290001269001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO GUARANDA LTDA",
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-08-31"
+  },
+  "series": [
+    {
+      "cutoff_date": "2026-06-30",
+      "assets": 86749883.46,
+      "available_funds": 17096863.71,
+      "coverage_ratio": 1.1437629894821295,
+      "delinquency_ratio": 0.12112142080157252,
+      "deposits_181_360": 14082725.52,
+      "deposits_1_30": 11261406.83,
+      "deposits_31_90": 13442208.55,
+      "deposits_361_plus": 1596391.25,
+      "deposits_91_180": 12043856.4,
+      "deposits_short_term": 41776841.72,
+      "deposits_total": 70530822.6,
+      "equity": 13313406.51,
+      "equity_assets_ratio": 0.1534688691096485,
+      "expenses": 4780759.83,
+      "income": 5140996.98,
+      "liabilities": 73076239.8,
+      "liquidity_fund_obligations": 0.0,
+      "liquidity_ratio": 0.4092426092088993,
+      "loan_portfolio_gross": 54468595.120000005,
+      "loan_portfolio_net": 46922831.96,
+      "loan_provisions": -7545763.16,
+      "nonperforming_loans_post_2021_05": 6597313.63,
+      "nonperforming_loans_pre_2021_05": 6597313.63,
+      "refinanced": 28134.02,
+      "restructured": 117118.20999999999,
+      "roa_proxy": 0.004152595203959025
+    },
+    {
+      "cutoff_date": "2026-07-31",
+      "assets": 86925408.65,
+      "available_funds": 17048582.83,
+      "coverage_ratio": 1.1723947418384784,
+      "delinquency_ratio": 0.11743150029322838,
+      "deposits_181_360": 13403472.7,
+      "deposits_1_30": 8966462.84,
+      "deposits_31_90": 14420958.65,
+      "deposits_361_plus": 2353457.36,
+      "deposits_91_180": 13476225.99,
+      "deposits_short_term": 40338666.32,
+      "deposits_total": 70576487.89,
+      "equity": 13339031.99,
+      "equity_assets_ratio": 0.15345377372580232,
+      "expenses": 5628499.16,
+      "income": 6034859.39,
+      "liabilities": 73180016.43,
+      "liquidity_fund_obligations": 0.0,
+      "liquidity_ratio": 0.42263625412789796,
+      "loan_portfolio_gross": 54226352.93,
+      "loan_portfolio_net": 46760681.58,
+      "loan_provisions": -7465671.35,
+      "nonperforming_loans_post_2021_05": 6367881.98,
+      "nonperforming_loans_pre_2021_05": 6367881.98,
+      "refinanced": 45979.18,
+      "restructured": 129772.48,
+      "roa_proxy": 0.004674815296367312
+    },
+    {
+      "cutoff_date": "2026-08-31",
+      "assets": 86776003.96,
+      "available_funds": 14951889.53,
+      "coverage_ratio": 1.1470824241880804,
+      "delinquency_ratio": 0.1200290322991501,
+      "deposits_181_360": 12248208.84,
+      "deposits_1_30": 9745520.83,
+      "deposits_31_90": 12945705.6,
+      "deposits_361_plus": 2045808.02,
+      "deposits_91_180": 15292866.22,
+      "deposits_short_term": 39769206.8,
+      "deposits_total": 70337427.52,
+      "equity": 13364679.49,
+      "equity_assets_ratio": 0.15401353922866215,
+      "expenses": 6405064.82,
+      "income": 6842683.85,
+      "liabilities": 72973705.44,
+      "liquidity_fund_obligations": 0.0,
+      "liquidity_ratio": 0.3759665010467345,
+      "loan_portfolio_gross": 54335827.55,
+      "loan_portfolio_net": 46854697.3,
+      "loan_provisions": -7481130.25,
+      "nonperforming_loans_post_2021_05": 6521876.8,
+      "nonperforming_loans_pre_2021_05": 6521876.8,
+      "refinanced": 46507.64,
+      "restructured": 130725.49999999999,
+      "roa_proxy": 0.005043088066163117
+    }
+  ],
+  "signals": [],
+  "risk_estimates": [],
+  "percentiles": {
+    "deposits_361_plus": {
+      "raw_percentile": 8.333333333333332,
+      "favorable_percentile": 8.333333333333332,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "liquidity_fund_obligations": {
+      "raw_percentile": 100.0,
+      "favorable_percentile": 100.0,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "nonperforming_loans_pre_2021_05": {
+      "raw_percentile": 22.916666666666664,
+      "favorable_percentile": 22.916666666666664,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "nonperforming_loans_post_2021_05": {
+      "raw_percentile": 22.916666666666664,
+      "favorable_percentile": 22.916666666666664,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "restructured": {
+      "raw_percentile": 22.916666666666664,
+      "favorable_percentile": 22.916666666666664,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "loan_portfolio_gross": {
+      "raw_percentile": 4.166666666666666,
+      "favorable_percentile": 4.166666666666666,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "delinquency_ratio": {
+      "raw_percentile": 93.75,
+      "favorable_percentile": 6.25,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "coverage_ratio": {
+      "raw_percentile": 56.25,
+      "favorable_percentile": 56.25,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "liquidity_ratio": {
+      "raw_percentile": 72.91666666666666,
+      "favorable_percentile": 72.91666666666666,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "deposits_181_360": {
+      "raw_percentile": 2.083333333333333,
+      "favorable_percentile": 2.083333333333333,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "refinanced": {
+      "raw_percentile": 22.916666666666664,
+      "favorable_percentile": 22.916666666666664,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "deposits_91_180": {
+      "raw_percentile": 4.166666666666666,
+      "favorable_percentile": 4.166666666666666,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "loan_portfolio_net": {
+      "raw_percentile": 4.166666666666666,
+      "favorable_percentile": 4.166666666666666,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "deposits_1_30": {
+      "raw_percentile": 18.75,
+      "favorable_percentile": 18.75,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "deposits_total": {
+      "raw_percentile": 4.166666666666666,
+      "favorable_percentile": 4.166666666666666,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "deposits_short_term": {
+      "raw_percentile": 6.25,
+      "favorable_percentile": 6.25,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "loan_provisions": {
+      "raw_percentile": 75.0,
+      "favorable_percentile": 75.0,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "equity_assets_ratio": {
+      "raw_percentile": 83.33333333333334,
+      "favorable_percentile": 83.33333333333334,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "available_funds": {
+      "raw_percentile": 12.5,
+      "favorable_percentile": 12.5,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "income": {
+      "raw_percentile": 6.25,
+      "favorable_percentile": 6.25,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "expenses": {
+      "raw_percentile": 6.25,
+      "favorable_percentile": 6.25,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "equity": {
+      "raw_percentile": 6.25,
+      "favorable_percentile": 6.25,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "liabilities": {
+      "raw_percentile": 4.166666666666666,
+      "favorable_percentile": 4.166666666666666,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "assets": {
+      "raw_percentile": 4.166666666666666,
+      "favorable_percentile": 4.166666666666666,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "deposits_31_90": {
+      "raw_percentile": 12.5,
+      "favorable_percentile": 12.5,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    },
+    "roa_proxy": {
+      "raw_percentile": 77.08333333333334,
+      "favorable_percentile": 77.08333333333334,
+      "n": 48,
+      "cutoff_date": "2026-08-31"
+    }
+  }
+}

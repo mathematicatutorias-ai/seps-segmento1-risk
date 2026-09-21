@@ -1,0 +1,314 @@
+[
+  {
+    "ruc": "1890012015001",
+    "entity_name": "ASOCIACION MUTUALISTA DE AHORRO Y CREDITO PARA LA VIVIENDA AMBATO",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0190006247001",
+    "entity_name": "ASOCIACION MUTUALISTA DE AHORRO Y CREDITO PARA LA VIVIENDA AZUAY",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1090056286001",
+    "entity_name": "ASOCIACION MUTUALISTA DE AHORRO Y CREDITO PARA LA VIVIENDA IMBABURA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1790075494001",
+    "entity_name": "ASOCIACION MUTUALISTA DE AHORRO Y CREDITO PARA LA VIVIENDA PICHINCHA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1390013678001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO 15 DE ABRIL LTDA",
+    "first_seen": "2018-05-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1790093204001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO 23 DE JULIO LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1790567699001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO 29 DE OCTUBRE LTDA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0590041920001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO 9 DE OCTUBRE LTDA",
+    "first_seen": "2022-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0190087603001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO ALFONSO JARAMILLO LEON CAJA",
+    "first_seen": "2021-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1790501469001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO ALIANZA DEL VALLE LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1891709591001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO AMBATO LTDA",
+    "first_seen": "2018-05-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1790325083001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO ANDALUCIA LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1090033456001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO ATUNTAQUI LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1390001920001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO CALCETA LTDA",
+    "first_seen": "2022-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1890080967001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO CAMARA DE COMERCIO DE AMBATO LTDA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2024-10-31"
+  },
+  {
+    "ruc": "1891710328001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO CHIBULEO LIMITADA",
+    "first_seen": "2018-05-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1390007791001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO CHONE LTDA",
+    "first_seen": "2021-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1390089410001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO COMERCIO LTDA",
+    "first_seen": "2020-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1790900193001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO CONSTRUCCION COMERCIO Y PRODUCCION LTDA",
+    "first_seen": "2018-05-31",
+    "last_seen": "2019-05-31"
+  },
+  {
+    "ruc": "1790451801001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO COOPROGRESO LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0190158977001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO CREA LIMITADA",
+    "first_seen": "2020-06-30",
+    "last_seen": "2025-07-31"
+  },
+  {
+    "ruc": "0390027923001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO DE LA PEQUEÃ‘A EMPRESA BIBLIAN LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0590052000001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO DE LA PEQUEÃ‘A EMPRESA DE COTOPAXI LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1690012606001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO DE LA PEQUEÃ‘A EMPRESA DE PASTAZA LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1190075539001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO DE LA PEQUEÑA EMPRESA CACPE LOJA LTDA",
+    "first_seen": "2022-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1490005710001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO DE LA PEQUEÑA EMPRESA GUALAQUIZA",
+    "first_seen": "2023-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1790979016001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO DE LOS SERVIDORES PUBLICOS DEL MINISTERIO DE EDUCACION Y CULTURA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1890037646001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO EL SAGRARIO LTDA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0190024733001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO ERCO LIMITADA",
+    "first_seen": "2019-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0691706710001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO FERNANDO DAQUILEMA LIMITADA",
+    "first_seen": "2018-05-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0290001269001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO GUARANDA LTDA",
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1890142679001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO INDIGENA SAC LTDA",
+    "first_seen": "2022-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0190155722001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO JARDIN AZUAYO LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0190115798001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO JUVENTUD ECUATORIANA PROGRESISTA LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1891710255001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO KULLKI WASI LTDA",
+    "first_seen": "2019-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0190021769001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO LA MERCED LIMITADA",
+    "first_seen": "2020-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0690075113001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO LUCHA CAMPESINA",
+    "first_seen": "2025-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1791847644001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO LUZ DEL VALLE",
+    "first_seen": "2023-06-30",
+    "last_seen": "2024-05-31"
+  },
+  {
+    "ruc": "1890141877001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO MUSHUC RUNA LTDA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0790015002001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO ONCE DE JUNIO LTDA",
+    "first_seen": "2019-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1890001323001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO OSCUS LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0490001883001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO PABLO MUÃ‘OZ VEGA LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1190015110001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO PADRE JULIAN LORENTE LTDA",
+    "first_seen": "2021-06-30",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1091720902001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO PILAHUIN TIO LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1790866084001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO POLICIA NACIONAL LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0690045389001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO RIOBAMBA LTDA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1890003628001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO SAN FRANCISCO LTDA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0290003288001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO SAN JOSE LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0790024656001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO SANTA ROSA LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0490002669001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO TULCAN LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "1190068389001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO VICENTINA MANUEL ESTEBAN GODOY ORTEGA LIMITADA",
+    "first_seen": "2018-01-31",
+    "last_seen": "2026-08-31"
+  },
+  {
+    "ruc": "0591711164001",
+    "entity_name": "COOPERATIVA DE AHORRO Y CREDITO VIRGEN DEL CISNE",
+    "first_seen": "2022-06-30",
+    "last_seen": "2026-08-31"
+  }
+]
