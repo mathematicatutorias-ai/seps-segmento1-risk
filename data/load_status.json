@@ -1,6 +1,6 @@
 {
   "phase": "complete",
-  "updated_at": "2026-09-21T07:00:54.777617+00:00",
+  "updated_at": "2026-09-21T17:54:26.949425+00:00",
   "sources_completed": 10,
   "sources_total": 10,
   "current_source": null,
@@ -8,7 +8,7 @@
   "updated": 0,
   "unchanged": 0,
   "resume_skipped": 8,
-  "sha_skipped": 1,
+  "sha_skipped": 0,
   "backend": "parquet+duckdb",
   "partitions": 104,
   "rows_manifest": 5622471,

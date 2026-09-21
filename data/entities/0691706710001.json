@@ -3116,7 +3116,7 @@
       "score": -2.430589348886124,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 1.0100375647143034, \"robust_z\": 2.430589348886124, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T07:00:53.879838+00:00"
+      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3126,7 +3126,7 @@
       "score": -1.45803978028154,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.06717581057738203, \"robust_z\": -1.45803978028154, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T07:00:53.879838+00:00"
+      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3136,7 +3136,7 @@
       "score": 0.41886709016797913,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.05922995687165078, \"robust_z\": -0.41886709016797913, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T07:00:53.879838+00:00"
+      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3146,7 +3146,7 @@
       "score": 0.7287747469716624,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.0917235571813747, \"robust_z\": -0.7287747469716624, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T07:00:53.879838+00:00"
+      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3156,7 +3156,7 @@
       "score": 0.93495787459696,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.5210948549820718, \"robust_z\": -0.93495787459696, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T07:00:53.879838+00:00"
+      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
     }
   ],
   "risk_estimates": [],
@@ -3164,170 +3164,659 @@
     "restructured": {
       "raw_percentile": 20.833333333333336,
       "favorable_percentile": 20.833333333333336,
+      "risk_percentile": 79.16666666666666,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "liquidity_fund_obligations": {
       "raw_percentile": 100.0,
       "favorable_percentile": 100.0,
+      "risk_percentile": 0.0,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "nonperforming_loans_pre_2021_05": {
       "raw_percentile": 77.08333333333334,
       "favorable_percentile": 77.08333333333334,
+      "risk_percentile": 22.916666666666657,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "nonperforming_loans_post_2021_05": {
       "raw_percentile": 77.08333333333334,
       "favorable_percentile": 77.08333333333334,
+      "risk_percentile": 22.916666666666657,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "refinanced": {
       "raw_percentile": 14.583333333333334,
       "favorable_percentile": 14.583333333333334,
+      "risk_percentile": 85.41666666666667,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "deposit_growth_3m": {
       "raw_percentile": 89.36170212765957,
       "favorable_percentile": 89.36170212765957,
+      "risk_percentile": 10.63829787234043,
       "n": 47,
       "cutoff_date": "2026-08-31"
     },
     "delinquency_ratio": {
       "raw_percentile": 33.33333333333333,
       "favorable_percentile": 66.66666666666667,
+      "risk_percentile": 33.33333333333333,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "coverage_ratio": {
       "raw_percentile": 64.58333333333334,
       "favorable_percentile": 64.58333333333334,
+      "risk_percentile": 35.41666666666666,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "liquidity_ratio": {
       "raw_percentile": 83.33333333333334,
       "favorable_percentile": 83.33333333333334,
+      "risk_percentile": 16.666666666666657,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "equity_assets_ratio": {
       "raw_percentile": 16.666666666666664,
       "favorable_percentile": 16.666666666666664,
+      "risk_percentile": 83.33333333333334,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "deposits_361_plus": {
       "raw_percentile": 89.58333333333334,
       "favorable_percentile": 89.58333333333334,
+      "risk_percentile": 10.416666666666657,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "loan_portfolio_gross": {
       "raw_percentile": 89.58333333333334,
       "favorable_percentile": 89.58333333333334,
+      "risk_percentile": 10.416666666666657,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "deposits_181_360": {
       "raw_percentile": 83.33333333333334,
       "favorable_percentile": 83.33333333333334,
+      "risk_percentile": 16.666666666666657,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "loan_provisions": {
       "raw_percentile": 25.0,
       "favorable_percentile": 25.0,
+      "risk_percentile": 75.0,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "deposits_31_90": {
       "raw_percentile": 81.25,
       "favorable_percentile": 81.25,
+      "risk_percentile": 18.75,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "deposits_1_30": {
       "raw_percentile": 79.16666666666666,
       "favorable_percentile": 79.16666666666666,
+      "risk_percentile": 20.833333333333343,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "deposits_total": {
       "raw_percentile": 87.5,
       "favorable_percentile": 87.5,
+      "risk_percentile": 12.5,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "deposits_short_term": {
       "raw_percentile": 87.5,
       "favorable_percentile": 87.5,
+      "risk_percentile": 12.5,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "loan_portfolio_net": {
       "raw_percentile": 89.58333333333334,
       "favorable_percentile": 89.58333333333334,
+      "risk_percentile": 10.416666666666657,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "available_funds": {
       "raw_percentile": 91.66666666666666,
       "favorable_percentile": 91.66666666666666,
+      "risk_percentile": 8.333333333333343,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "income": {
       "raw_percentile": 87.5,
       "favorable_percentile": 87.5,
+      "risk_percentile": 12.5,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "expenses": {
       "raw_percentile": 85.41666666666666,
       "favorable_percentile": 85.41666666666666,
+      "risk_percentile": 14.583333333333343,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "equity": {
       "raw_percentile": 70.83333333333334,
       "favorable_percentile": 70.83333333333334,
+      "risk_percentile": 29.166666666666657,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "liabilities": {
       "raw_percentile": 87.5,
       "favorable_percentile": 87.5,
+      "risk_percentile": 12.5,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "assets": {
       "raw_percentile": 87.5,
       "favorable_percentile": 87.5,
+      "risk_percentile": 12.5,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "deposit_growth_12m": {
       "raw_percentile": 72.3404255319149,
       "favorable_percentile": 72.3404255319149,
+      "risk_percentile": 27.659574468085097,
       "n": 47,
       "cutoff_date": "2026-08-31"
     },
     "deposits_91_180": {
       "raw_percentile": 83.33333333333334,
       "favorable_percentile": 83.33333333333334,
+      "risk_percentile": 16.666666666666657,
       "n": 48,
       "cutoff_date": "2026-08-31"
     },
     "roa_proxy": {
       "raw_percentile": 54.166666666666664,
       "favorable_percentile": 54.166666666666664,
+      "risk_percentile": 45.833333333333336,
       "n": 48,
       "cutoff_date": "2026-08-31"
     }
+  },
+  "risk_index": {
+    "current": 34.09574468085106,
+    "label": "Medio",
+    "bands": {
+      "low_max": 33,
+      "medium_max": 66
+    },
+    "series": [
+      {
+        "cutoff_date": "2018-05-31",
+        "risk_index": 52.076124567474054
+      },
+      {
+        "cutoff_date": "2018-06-30",
+        "risk_index": 51.90311418685121
+      },
+      {
+        "cutoff_date": "2018-07-31",
+        "risk_index": 44.63667820069204
+      },
+      {
+        "cutoff_date": "2018-08-31",
+        "risk_index": 37.35294117647059
+      },
+      {
+        "cutoff_date": "2018-09-30",
+        "risk_index": 40.294117647058826
+      },
+      {
+        "cutoff_date": "2018-10-31",
+        "risk_index": 40.588235294117645
+      },
+      {
+        "cutoff_date": "2018-11-30",
+        "risk_index": 39.11764705882353
+      },
+      {
+        "cutoff_date": "2018-12-31",
+        "risk_index": 35.0
+      },
+      {
+        "cutoff_date": "2019-01-31",
+        "risk_index": 27.499999999999996
+      },
+      {
+        "cutoff_date": "2019-02-28",
+        "risk_index": 30.294117647058822
+      },
+      {
+        "cutoff_date": "2019-03-31",
+        "risk_index": 34.85294117647059
+      },
+      {
+        "cutoff_date": "2019-04-30",
+        "risk_index": 35.88235294117647
+      },
+      {
+        "cutoff_date": "2019-05-31",
+        "risk_index": 32.35294117647059
+      },
+      {
+        "cutoff_date": "2019-06-30",
+        "risk_index": 31.11111111111111
+      },
+      {
+        "cutoff_date": "2019-07-31",
+        "risk_index": 34.58333333333333
+      },
+      {
+        "cutoff_date": "2019-08-31",
+        "risk_index": 31.01010101010101
+      },
+      {
+        "cutoff_date": "2019-09-30",
+        "risk_index": 28.61111111111111
+      },
+      {
+        "cutoff_date": "2019-10-31",
+        "risk_index": 32.916666666666664
+      },
+      {
+        "cutoff_date": "2019-11-30",
+        "risk_index": 34.72222222222222
+      },
+      {
+        "cutoff_date": "2019-12-31",
+        "risk_index": 33.05555555555556
+      },
+      {
+        "cutoff_date": "2020-01-31",
+        "risk_index": 25.69444444444445
+      },
+      {
+        "cutoff_date": "2020-02-29",
+        "risk_index": 25.0
+      },
+      {
+        "cutoff_date": "2020-03-31",
+        "risk_index": 35.55555555555556
+      },
+      {
+        "cutoff_date": "2020-04-30",
+        "risk_index": 20.555555555555557
+      },
+      {
+        "cutoff_date": "2020-05-31",
+        "risk_index": 31.111111111111114
+      },
+      {
+        "cutoff_date": "2020-06-30",
+        "risk_index": 27.692307692307693
+      },
+      {
+        "cutoff_date": "2020-07-31",
+        "risk_index": 50.128205128205124
+      },
+      {
+        "cutoff_date": "2020-08-31",
+        "risk_index": 33.23717948717949
+      },
+      {
+        "cutoff_date": "2020-09-30",
+        "risk_index": 33.97435897435898
+      },
+      {
+        "cutoff_date": "2020-10-31",
+        "risk_index": 40.0
+      },
+      {
+        "cutoff_date": "2020-11-30",
+        "risk_index": 47.94871794871795
+      },
+      {
+        "cutoff_date": "2020-12-31",
+        "risk_index": 49.743589743589745
+      },
+      {
+        "cutoff_date": "2021-01-31",
+        "risk_index": 42.43589743589744
+      },
+      {
+        "cutoff_date": "2021-02-28",
+        "risk_index": 40.8974358974359
+      },
+      {
+        "cutoff_date": "2021-03-31",
+        "risk_index": 35.00000000000001
+      },
+      {
+        "cutoff_date": "2021-04-30",
+        "risk_index": 48.205128205128204
+      },
+      {
+        "cutoff_date": "2021-05-31",
+        "risk_index": 47.820512820512825
+      },
+      {
+        "cutoff_date": "2021-06-30",
+        "risk_index": 51.14468864468864
+      },
+      {
+        "cutoff_date": "2021-07-31",
+        "risk_index": 50.586080586080584
+      },
+      {
+        "cutoff_date": "2021-08-31",
+        "risk_index": 49.42307692307692
+      },
+      {
+        "cutoff_date": "2021-09-30",
+        "risk_index": 51.66666666666667
+      },
+      {
+        "cutoff_date": "2021-10-31",
+        "risk_index": 42.02380952380952
+      },
+      {
+        "cutoff_date": "2021-11-30",
+        "risk_index": 46.785714285714285
+      },
+      {
+        "cutoff_date": "2021-12-31",
+        "risk_index": 50.357142857142854
+      },
+      {
+        "cutoff_date": "2022-01-31",
+        "risk_index": 46.30952380952382
+      },
+      {
+        "cutoff_date": "2022-02-28",
+        "risk_index": 52.38095238095238
+      },
+      {
+        "cutoff_date": "2022-03-31",
+        "risk_index": 46.54761904761905
+      },
+      {
+        "cutoff_date": "2022-04-30",
+        "risk_index": 43.214285714285715
+      },
+      {
+        "cutoff_date": "2022-05-31",
+        "risk_index": 42.97619047619048
+      },
+      {
+        "cutoff_date": "2022-06-30",
+        "risk_index": 51.75531914893617
+      },
+      {
+        "cutoff_date": "2022-07-31",
+        "risk_index": 49.66565349544073
+      },
+      {
+        "cutoff_date": "2022-08-31",
+        "risk_index": 49.66565349544073
+      },
+      {
+        "cutoff_date": "2022-09-30",
+        "risk_index": 51.702127659574465
+      },
+      {
+        "cutoff_date": "2022-10-31",
+        "risk_index": 48.829787234042556
+      },
+      {
+        "cutoff_date": "2022-11-30",
+        "risk_index": 51.70212765957447
+      },
+      {
+        "cutoff_date": "2022-12-31",
+        "risk_index": 59.255319148936174
+      },
+      {
+        "cutoff_date": "2023-01-31",
+        "risk_index": 48.93617021276596
+      },
+      {
+        "cutoff_date": "2023-02-28",
+        "risk_index": 49.148936170212764
+      },
+      {
+        "cutoff_date": "2023-03-31",
+        "risk_index": 47.5531914893617
+      },
+      {
+        "cutoff_date": "2023-04-30",
+        "risk_index": 41.170212765957444
+      },
+      {
+        "cutoff_date": "2023-05-31",
+        "risk_index": 38.191489361702125
+      },
+      {
+        "cutoff_date": "2023-06-30",
+        "risk_index": 39.133738601823715
+      },
+      {
+        "cutoff_date": "2023-07-31",
+        "risk_index": 40.0651324359531
+      },
+      {
+        "cutoff_date": "2023-08-31",
+        "risk_index": 38.330438558402086
+      },
+      {
+        "cutoff_date": "2023-09-30",
+        "risk_index": 38.87755102040816
+      },
+      {
+        "cutoff_date": "2023-10-31",
+        "risk_index": 33.673469387755105
+      },
+      {
+        "cutoff_date": "2023-11-30",
+        "risk_index": 36.0204081632653
+      },
+      {
+        "cutoff_date": "2023-12-31",
+        "risk_index": 40.102040816326536
+      },
+      {
+        "cutoff_date": "2024-01-31",
+        "risk_index": 39.79591836734694
+      },
+      {
+        "cutoff_date": "2024-02-29",
+        "risk_index": 41.12244897959184
+      },
+      {
+        "cutoff_date": "2024-03-31",
+        "risk_index": 39.285714285714285
+      },
+      {
+        "cutoff_date": "2024-04-30",
+        "risk_index": 45.30612244897959
+      },
+      {
+        "cutoff_date": "2024-05-31",
+        "risk_index": 41.93877551020408
+      },
+      {
+        "cutoff_date": "2024-06-30",
+        "risk_index": 42.083333333333336
+      },
+      {
+        "cutoff_date": "2024-07-31",
+        "risk_index": 39.0625
+      },
+      {
+        "cutoff_date": "2024-08-31",
+        "risk_index": 38.85416666666667
+      },
+      {
+        "cutoff_date": "2024-09-30",
+        "risk_index": 41.25
+      },
+      {
+        "cutoff_date": "2024-10-31",
+        "risk_index": 37.708333333333336
+      },
+      {
+        "cutoff_date": "2024-11-30",
+        "risk_index": 39.148936170212764
+      },
+      {
+        "cutoff_date": "2024-12-31",
+        "risk_index": 34.148936170212764
+      },
+      {
+        "cutoff_date": "2025-01-31",
+        "risk_index": 38.19148936170213
+      },
+      {
+        "cutoff_date": "2025-02-28",
+        "risk_index": 37.12765957446808
+      },
+      {
+        "cutoff_date": "2025-03-31",
+        "risk_index": 39.8936170212766
+      },
+      {
+        "cutoff_date": "2025-04-30",
+        "risk_index": 41.48936170212766
+      },
+      {
+        "cutoff_date": "2025-05-31",
+        "risk_index": 43.93617021276596
+      },
+      {
+        "cutoff_date": "2025-06-30",
+        "risk_index": 43.86081560283688
+      },
+      {
+        "cutoff_date": "2025-07-31",
+        "risk_index": 47.748226950354606
+      },
+      {
+        "cutoff_date": "2025-08-31",
+        "risk_index": 50.80712303422757
+      },
+      {
+        "cutoff_date": "2025-09-30",
+        "risk_index": 51.06382978723404
+      },
+      {
+        "cutoff_date": "2025-10-31",
+        "risk_index": 49.57446808510638
+      },
+      {
+        "cutoff_date": "2025-11-30",
+        "risk_index": 47.234042553191486
+      },
+      {
+        "cutoff_date": "2025-12-31",
+        "risk_index": 40.85106382978723
+      },
+      {
+        "cutoff_date": "2026-01-31",
+        "risk_index": 40.1063829787234
+      },
+      {
+        "cutoff_date": "2026-02-28",
+        "risk_index": 38.191489361702125
+      },
+      {
+        "cutoff_date": "2026-03-31",
+        "risk_index": 37.5531914893617
+      },
+      {
+        "cutoff_date": "2026-04-30",
+        "risk_index": 37.234042553191486
+      },
+      {
+        "cutoff_date": "2026-05-31",
+        "risk_index": 37.12765957446808
+      },
+      {
+        "cutoff_date": "2026-06-30",
+        "risk_index": 34.85150709219858
+      },
+      {
+        "cutoff_date": "2026-07-31",
+        "risk_index": 34.29742907801418
+      },
+      {
+        "cutoff_date": "2026-08-31",
+        "risk_index": 34.09574468085106
+      }
+    ],
+    "contributors": [
+      {
+        "feature": "delinquency_ratio",
+        "value": 0.060169623603910885,
+        "weight": 0.3,
+        "risk_percentile": 33.33333333333333,
+        "weighted_points": 9.999999999999998,
+        "contribution_points": 9.999999999999998
+      },
+      {
+        "feature": "equity_assets_ratio",
+        "value": 0.08893157307530601,
+        "weight": 0.1,
+        "risk_percentile": 83.33333333333334,
+        "weighted_points": 8.333333333333334,
+        "contribution_points": 8.333333333333334
+      },
+      {
+        "feature": "coverage_ratio",
+        "value": 1.2167406727793286,
+        "weight": 0.2,
+        "risk_percentile": 35.41666666666666,
+        "weighted_points": 7.083333333333332,
+        "contribution_points": 7.083333333333332
+      },
+      {
+        "feature": "roa_proxy",
+        "value": 0.002900236707670341,
+        "weight": 0.1,
+        "risk_percentile": 45.833333333333336,
+        "weighted_points": 4.583333333333334,
+        "contribution_points": 4.583333333333334
+      },
+      {
+        "feature": "liquidity_ratio",
+        "value": 0.4352238674703698,
+        "weight": 0.15,
+        "risk_percentile": 16.666666666666657,
+        "weighted_points": 2.4999999999999987,
+        "contribution_points": 2.4999999999999987
+      },
+      {
+        "feature": "deposit_growth_3m",
+        "value": 0.04282581762058002,
+        "weight": 0.15,
+        "risk_percentile": 10.63829787234043,
+        "weighted_points": 1.5957446808510645,
+        "contribution_points": 1.5957446808510645
+      }
+    ],
+    "method": "Índice relativo 0–100 construido con percentiles contemporáneos del Segmento 1; no es una probabilidad de default."
   }
 }

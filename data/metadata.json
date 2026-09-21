@@ -1,6 +1,6 @@
 {
   "mode": "live",
-  "generated_at": "2026-09-21T07:00:57.689452+00:00",
+  "generated_at": "2026-09-21T17:54:30.222435+00:00",
   "title": "Monitor de Riesgo Financiero",
   "subtitle": "Información oficial SEPS · Segmento 1",
   "default_ruc": "1790866084001",
@@ -21,6 +21,27 @@
     "disclaimer": "Este sitio presenta un análisis académico e informativo, de elaboración independiente, basado en información pública de la SEPS. No constituye una calificación oficial de riesgo, una afirmación de insolvencia o default, recomendación financiera, asesoría de inversión ni invitación a retirar o colocar fondos. Los indicadores derivados son cálculos propios y deben interpretarse junto con la metodología, supuestos y limitaciones.",
     "academic_use": true,
     "academic_notice": "ANÁLISIS ACADÉMICO E INFORMATIVO · Elaboración independiente sobre información pública de la SEPS."
+  },
+  "focus_display_name": "CPN",
+  "risk_index": {
+    "enabled": true,
+    "bands": {
+      "low_max": 33,
+      "medium_max": 66
+    },
+    "weights": {
+      "delinquency_ratio": 0.3,
+      "coverage_ratio": 0.2,
+      "liquidity_ratio": 0.15,
+      "deposit_growth_3m": 0.15,
+      "equity_assets_ratio": 0.1,
+      "roa_proxy": 0.1
+    },
+    "labels": {
+      "low": "Bajo",
+      "medium": "Medio",
+      "high": "Alto"
+    }
   },
   "dashboard_defaults": {
     "default_period": "all",

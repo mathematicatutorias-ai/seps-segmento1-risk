@@ -50,12 +50,12 @@ window.MathJax={
     <div id="academicNotice" class="academic-notice hidden"></div>
 
     <section id="resumen" class="cards">
-      <div class="card emphasis"><div class="kpi-icon risk-icon">▥</div><div><span>Morosidad</span><b id="kpiMora">—</b><small>cartera improductiva / bruta</small></div></div>
-      <div class="card"><div class="kpi-icon blue-icon">◉</div><div><span>Cobertura</span><b id="kpiCoverage">—</b><small>provisión / improductiva</small></div></div>
-      <div class="card"><div class="kpi-icon green-icon">◒</div><div><span>Liquidez</span><b id="kpiLiquidity">—</b><small>fondos / depósitos CP</small></div></div>
-      <div class="card"><div class="kpi-icon purple-icon">↗</div><div><span>Depósitos Δ3m</span><b id="kpiDeposits">—</b><small>variación trimestral</small></div></div>
-      <div class="card"><div class="kpi-icon amber-icon">◔</div><div><span>Patrimonio / Activos</span><b id="kpiEquity">—</b><small>capitalización</small></div></div>
-      <div class="card inference-card"><div class="kpi-icon slate-icon">◌</div><div><span id="riskKpiLabel">Índice de riesgo</span><b id="kpiInference">—</b><small id="inferenceNote">0–100</small></div></div>
+      <div class="card emphasis"><div class="kpi-icon risk-icon">▥</div><div><span>Morosidad</span><div class="kpi-value-row"><b id="kpiMora">—</b><span id="trendMora" class="kpi-trend neutral" aria-label="Sin comparación">→</span></div><small>cartera improductiva / bruta</small></div></div>
+      <div class="card"><div class="kpi-icon blue-icon">◉</div><div><span>Cobertura</span><div class="kpi-value-row"><b id="kpiCoverage">—</b><span id="trendCoverage" class="kpi-trend neutral" aria-label="Sin comparación">→</span></div><small>provisión / improductiva</small></div></div>
+      <div class="card"><div class="kpi-icon green-icon">◒</div><div><span>Liquidez</span><div class="kpi-value-row"><b id="kpiLiquidity">—</b><span id="trendLiquidity" class="kpi-trend neutral" aria-label="Sin comparación">→</span></div><small>fondos / depósitos CP</small></div></div>
+      <div class="card"><div class="kpi-icon purple-icon">↗</div><div><span>Depósitos Δ3m</span><div class="kpi-value-row"><b id="kpiDeposits">—</b><span id="trendDeposits" class="kpi-trend neutral" aria-label="Sin comparación">→</span></div><small>variación trimestral</small></div></div>
+      <div class="card"><div class="kpi-icon amber-icon">◔</div><div><span>Patrimonio / Activos</span><div class="kpi-value-row"><b id="kpiEquity">—</b><span id="trendEquity" class="kpi-trend neutral" aria-label="Sin comparación">→</span></div><small>capitalización</small></div></div>
+      <div class="card inference-card"><div class="kpi-icon slate-icon">◌</div><div><span id="riskKpiLabel">Índice de riesgo</span><div class="kpi-value-row"><b id="kpiInference">—</b><span id="trendRisk" class="kpi-trend neutral" aria-label="Sin comparación">→</span></div><small id="inferenceNote">0–100</small></div></div>
     </section>
 
     <section class="grid executive">
@@ -102,8 +102,8 @@ window.MathJax={
     <div id="methodologyModalContent" class="methodology-modal-content"></div>
   </section>
 </div>
-<script>window.SEPS_BUILD_INFO={"phase":"package","sources_completed":0,"sources_total":0,"generated_at":"2026-09-21T00:00:00Z","dashboard_mode":"empty","entity_count":0,"build_id":"20260921T000000Z","auto_reload_seconds":0};</script>
-<script src="data/live_bundle.js?v=20260921T000000Z"></script>
-<script src="data/load_status.js?v=20260921T000000Z"></script>
-<script src="assets/app.js?v=014"></script>
+<script>window.SEPS_BUILD_INFO={"phase":"complete","updated_at":"2026-09-21T17:54:26.949425+00:00","sources_completed":10,"sources_total":10,"current_source":null,"inserted":0,"updated":0,"unchanged":0,"resume_skipped":8,"sha_skipped":0,"backend":"parquet+duckdb","partitions":104,"rows_manifest":5622471,"first_period":"2018-01","last_period":"2026-08","sources":9,"path":"/content/drive/MyDrive/seps-segmento1-risk/data/parquet/eeff","first_cutoff":"2018-01-31","last_cutoff":"2026-08-31","fact_rows":5622471,"entities":52,"generated_at":"2026-09-21T17:54:30.222435+00:00","dashboard_mode":"live","entity_count":52,"default_ruc":"1790866084001","build_id":"0260921T1754302224350000","auto_reload_seconds":0};</script>
+<script src="data/live_bundle.js?v=0260921T1754302224350000"></script>
+<script src="data/load_status.js?v=0260921T1754302224350000"></script>
+<script src="assets/app.js?v=015"></script>
 </body></html>
