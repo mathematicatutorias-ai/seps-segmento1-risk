@@ -3,7 +3,9 @@
     "ruc": "1891710328001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO CHIBULEO LIMITADA",
     "first_seen": "2018-05-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC CHIBULEO LIMITADA",
+    "aliases": []
   },
   "series": [
     {
@@ -3116,7 +3118,7 @@
       "score": -1.2734437515342532,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.7181066459382536, \"robust_z\": 1.2734437515342532, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3126,7 +3128,7 @@
       "score": 0.9950265385828074,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.1083175631458579, \"robust_z\": 0.9950265385828074, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3136,7 +3138,7 @@
       "score": 0.7095114005087517,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.017043665696781174, \"robust_z\": -0.7095114005087517, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3146,7 +3148,7 @@
       "score": 1.321954613485913,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.09178488390570688, \"robust_z\": -1.321954613485913, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3156,7 +3158,7 @@
       "score": 0.4429664657765759,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.3361432694364448, \"robust_z\": -0.4429664657765759, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

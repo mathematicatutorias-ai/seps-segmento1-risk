@@ -3,7 +3,9 @@
     "ruc": "1390013678001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO 15 DE ABRIL LTDA",
     "first_seen": "2018-05-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC 15 DE ABRIL LTDA",
+    "aliases": []
   },
   "series": [
     {
@@ -3116,7 +3118,7 @@
       "score": 1.063074720457258,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.9742378132020322, \"robust_z\": -1.063074720457258, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3126,7 +3128,7 @@
       "score": -1.222016468171938,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.11595756291806064, \"robust_z\": -1.222016468171938, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3136,7 +3138,7 @@
       "score": -0.005555667508582411,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.024746189206120595, \"robust_z\": 0.005555667508582411, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3146,7 +3148,7 @@
       "score": 2.9480752381384057,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.11148003874968249, \"robust_z\": -2.9480752381384057, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3156,7 +3158,7 @@
       "score": -1.9027686151515846,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.2757004458173134, \"robust_z\": 1.9027686151515846, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

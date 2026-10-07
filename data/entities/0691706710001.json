@@ -3,7 +3,9 @@
     "ruc": "0691706710001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO FERNANDO DAQUILEMA LIMITADA",
     "first_seen": "2018-05-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC FERNANDO DAQUILEMA LIMITADA",
+    "aliases": []
   },
   "series": [
     {
@@ -3116,7 +3118,7 @@
       "score": -2.430589348886124,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 1.0100375647143034, \"robust_z\": 2.430589348886124, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3126,7 +3128,7 @@
       "score": -1.45803978028154,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.06717581057738203, \"robust_z\": -1.45803978028154, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3136,7 +3138,7 @@
       "score": 0.41886709016797913,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.05922995687165078, \"robust_z\": -0.41886709016797913, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3146,7 +3148,7 @@
       "score": 0.7287747469716624,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.0917235571813747, \"robust_z\": -0.7287747469716624, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3156,7 +3158,7 @@
       "score": 0.93495787459696,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.5210948549820718, \"robust_z\": -0.93495787459696, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

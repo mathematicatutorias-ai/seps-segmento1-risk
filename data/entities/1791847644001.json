@@ -3,7 +3,9 @@
     "ruc": "1791847644001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO LUZ DEL VALLE",
     "first_seen": "2023-06-30",
-    "last_seen": "2024-05-31"
+    "last_seen": "2024-05-31",
+    "display_name": "COAC LUZ DEL VALLE",
+    "aliases": []
   },
   "series": [
     {
@@ -376,7 +378,7 @@
       "score": 1.2730029479659863,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.8041776252456412, \"robust_z\": -1.2730029479659863, \"window_months\": 11}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2024-05-31",
@@ -386,7 +388,7 @@
       "score": -2.418225977428278,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.18694035189676886, \"robust_z\": -2.418225977428278, \"window_months\": 11}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2024-05-31",
@@ -396,7 +398,7 @@
       "score": -1.6515559506912443,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": -0.023860305179701113, \"robust_z\": 1.6515559506912443, \"window_months\": 8}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2024-05-31",
@@ -406,7 +408,7 @@
       "score": -0.3608383739238843,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.10365896286192475, \"robust_z\": 0.3608383739238843, \"window_months\": 11}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2024-05-31",
@@ -416,7 +418,7 @@
       "score": -1.1260882839171713,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.13049439188674256, \"robust_z\": 1.1260882839171713, \"window_months\": 11}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

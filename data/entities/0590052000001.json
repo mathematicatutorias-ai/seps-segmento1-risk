@@ -3,7 +3,9 @@
     "ruc": "0590052000001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO DE LA PEQUEÃ‘A EMPRESA DE COTOPAXI LIMITADA",
     "first_seen": "2018-01-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC DE LA PEQUEÃ‘A EMPRESA DE COTOPAXI LIMITADA",
+    "aliases": []
   },
   "series": [
     {
@@ -3240,7 +3242,7 @@
       "score": -0.2687257210607542,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 1.4746600965664882, \"robust_z\": 0.2687257210607542, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3250,7 +3252,7 @@
       "score": 2.085059736352508,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.10743829987692435, \"robust_z\": 2.085059736352508, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3260,7 +3262,7 @@
       "score": 2.2415261032281384,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.02702585407953495, \"robust_z\": -2.2415261032281384, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3270,7 +3272,7 @@
       "score": -0.6267390749398442,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.20304530234559184, \"robust_z\": 0.6267390749398442, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3280,7 +3282,7 @@
       "score": 0.18136505174686596,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.3466536954751298, \"robust_z\": -0.18136505174686596, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

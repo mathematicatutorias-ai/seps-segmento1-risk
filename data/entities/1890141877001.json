@@ -3,7 +3,9 @@
     "ruc": "1890141877001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO MUSHUC RUNA LTDA",
     "first_seen": "2018-01-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC MUSHUC RUNA LTDA",
+    "aliases": []
   },
   "series": [
     {
@@ -3240,7 +3242,7 @@
       "score": -0.5808602649821676,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 1.1400929359741825, \"robust_z\": 0.5808602649821676, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3250,7 +3252,7 @@
       "score": 1.2284445021572419,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.0876108041991519, \"robust_z\": 1.2284445021572419, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3260,7 +3262,7 @@
       "score": -0.7232471244239265,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.021297023445782215, \"robust_z\": 0.7232471244239265, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3270,7 +3272,7 @@
       "score": 0.8272567966779439,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.11940964206246574, \"robust_z\": -0.8272567966779439, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3280,7 +3282,7 @@
       "score": -0.8314733348426848,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.38885542208695506, \"robust_z\": 0.8314733348426848, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

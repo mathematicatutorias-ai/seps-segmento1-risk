@@ -3,7 +3,9 @@
     "ruc": "0490002669001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO TULCAN LIMITADA",
     "first_seen": "2018-01-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC TULCAN LIMITADA",
+    "aliases": []
   },
   "series": [
     {
@@ -3240,7 +3242,7 @@
       "score": -0.4858674105668042,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 1.3294258758491462, \"robust_z\": 0.4858674105668042, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3250,7 +3252,7 @@
       "score": -0.7287979147692413,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.06760971078102081, \"robust_z\": -0.7287979147692413, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3260,7 +3262,7 @@
       "score": 1.6399688494581959,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.016644658215874575, \"robust_z\": -1.6399688494581959, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3270,7 +3272,7 @@
       "score": -1.163587567052381,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.12271627544843598, \"robust_z\": 1.163587567052381, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3280,7 +3282,7 @@
       "score": 1.1807181139246998,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.34478508083645154, \"robust_z\": -1.1807181139246998, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

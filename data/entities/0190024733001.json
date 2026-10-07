@@ -3,7 +3,9 @@
     "ruc": "0190024733001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO ERCO LIMITADA",
     "first_seen": "2019-06-30",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC ERCO LIMITADA",
+    "aliases": []
   },
   "series": [
     {
@@ -2713,7 +2715,7 @@
       "score": -1.332257206794204,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 1.2461178708012657, \"robust_z\": 1.332257206794204, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2723,7 +2725,7 @@
       "score": -2.487152606495257,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.08217838654208277, \"robust_z\": -2.487152606495257, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2733,7 +2735,7 @@
       "score": -2.085315956890858,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.04202256154695061, \"robust_z\": 2.085315956890858, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2743,7 +2745,7 @@
       "score": 1.5114276560016093,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.15280048638755905, \"robust_z\": -1.5114276560016093, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2753,7 +2755,7 @@
       "score": -1.8059967388903315,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.21562843479187765, \"robust_z\": 1.8059967388903315, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

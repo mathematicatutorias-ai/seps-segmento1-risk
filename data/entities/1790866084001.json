@@ -3,7 +3,11 @@
     "ruc": "1790866084001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO POLICIA NACIONAL LIMITADA",
     "first_seen": "2018-01-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC POLICIA NACIONAL LIMITADA",
+    "aliases": [
+      "CPN"
+    ]
   },
   "series": [
     {
@@ -3240,7 +3244,7 @@
       "score": 1.6005347468224638,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.41755520413123715, \"robust_z\": -1.6005347468224638, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3250,7 +3254,7 @@
       "score": 1.0179978091709234,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.1450844420252169, \"robust_z\": 1.0179978091709234, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3260,7 +3264,7 @@
       "score": -2.2075766788632163,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": -0.009883261494447848, \"robust_z\": 2.2075766788632163, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3270,7 +3274,7 @@
       "score": 1.8949570861439986,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.09962706895639217, \"robust_z\": -1.8949570861439986, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3280,7 +3284,7 @@
       "score": -0.9677467986264661,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.2767594936188904, \"robust_z\": 0.9677467986264661, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

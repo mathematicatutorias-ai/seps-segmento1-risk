@@ -3,7 +3,9 @@
     "ruc": "0690075113001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO LUCHA CAMPESINA",
     "first_seen": "2025-06-30",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC LUCHA CAMPESINA",
+    "aliases": []
   },
   "series": [
     {
@@ -481,7 +483,7 @@
       "score": 0.20695825072870552,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 1.3083359500792713, \"robust_z\": -0.20695825072870552, \"window_months\": 14}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -491,7 +493,7 @@
       "score": 1.368625321459269,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.02619980178552133, \"robust_z\": 1.368625321459269, \"window_months\": 14}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -501,7 +503,7 @@
       "score": -0.6711084415490587,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.033257946409640526, \"robust_z\": 0.6711084415490587, \"window_months\": 11}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -511,7 +513,7 @@
       "score": 0.8060623185199776,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.11449753602016305, \"robust_z\": -0.8060623185199776, \"window_months\": 14}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -521,7 +523,7 @@
       "score": -2.35722843205489,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.2669264658098447, \"robust_z\": 2.35722843205489, \"window_months\": 14}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

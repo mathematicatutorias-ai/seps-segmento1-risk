@@ -3,7 +3,9 @@
     "ruc": "1790075494001",
     "entity_name": "ASOCIACION MUTUALISTA DE AHORRO Y CREDITO PARA LA VIVIENDA PICHINCHA",
     "first_seen": "2018-01-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "MUTUALISTA PICHINCHA",
+    "aliases": []
   },
   "series": [
     {
@@ -3240,7 +3242,7 @@
       "score": -0.12475153720266444,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.8882987920020089, \"robust_z\": 0.12475153720266444, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3250,7 +3252,7 @@
       "score": -3.402369442254321,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.08732861748917203, \"robust_z\": -3.402369442254321, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3260,7 +3262,7 @@
       "score": 1.6003263162416181,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.018239959079476065, \"robust_z\": -1.6003263162416181, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3270,7 +3272,7 @@
       "score": 0.5954628330682395,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.05728242016322099, \"robust_z\": -0.5954628330682395, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3280,7 +3282,7 @@
       "score": -0.15837374683377375,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.133557724970837, \"robust_z\": 0.15837374683377375, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

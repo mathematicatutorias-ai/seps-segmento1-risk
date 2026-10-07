@@ -3,7 +3,9 @@
     "ruc": "1190015110001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO PADRE JULIAN LORENTE LTDA",
     "first_seen": "2021-06-30",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC PADRE JULIAN LORENTE LTDA",
+    "aliases": []
   },
   "series": [
     {
@@ -1969,7 +1971,7 @@
       "score": -0.6129758452324945,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.8647548315881822, \"robust_z\": 0.6129758452324945, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -1979,7 +1981,7 @@
       "score": 0.955431519218232,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.052961342180221735, \"robust_z\": 0.955431519218232, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -1989,7 +1991,7 @@
       "score": 0.4200374449071449,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.04364396635752399, \"robust_z\": -0.4200374449071449, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -1999,7 +2001,7 @@
       "score": 1.416315275090148,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.10284047656352757, \"robust_z\": -1.416315275090148, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2009,7 +2011,7 @@
       "score": -1.2875871064399749,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.24505418410737168, \"robust_z\": 1.2875871064399749, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

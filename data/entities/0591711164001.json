@@ -3,7 +3,9 @@
     "ruc": "0591711164001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO VIRGEN DEL CISNE",
     "first_seen": "2022-06-30",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC VIRGEN DEL CISNE",
+    "aliases": []
   },
   "series": [
     {
@@ -1597,7 +1599,7 @@
       "score": -0.77063785943379,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 1.2224652265546943, \"robust_z\": 0.77063785943379, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -1607,7 +1609,7 @@
       "score": -0.7145696991162427,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.05794044941190936, \"robust_z\": -0.7145696991162427, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -1617,7 +1619,7 @@
       "score": 1.1622068338067337,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.03430527485347501, \"robust_z\": -1.1622068338067337, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -1627,7 +1629,7 @@
       "score": -1.1183338925857162,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.13944068919882388, \"robust_z\": 1.1183338925857162, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -1637,7 +1639,7 @@
       "score": -1.265404184502936,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.22094202674227525, \"robust_z\": 1.265404184502936, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

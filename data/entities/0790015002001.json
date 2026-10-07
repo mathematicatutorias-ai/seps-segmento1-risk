@@ -3,7 +3,9 @@
     "ruc": "0790015002001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO ONCE DE JUNIO LTDA",
     "first_seen": "2019-06-30",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC ONCE DE JUNIO LTDA",
+    "aliases": []
   },
   "series": [
     {
@@ -2713,7 +2715,7 @@
       "score": 0.8975049801129075,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.941673843794687, \"robust_z\": -0.8975049801129075, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2723,7 +2725,7 @@
       "score": 7.14446746165198,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.12734457030392693, \"robust_z\": 7.14446746165198, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2733,7 +2735,7 @@
       "score": 1.0514390208817737,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.0009210282540536019, \"robust_z\": -1.0514390208817737, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2743,7 +2745,7 @@
       "score": -2.6047658218385985,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.13648270157100612, \"robust_z\": 2.6047658218385985, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2753,7 +2755,7 @@
       "score": 1.0795333596552497,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.2940067359542484, \"robust_z\": -1.0795333596552497, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

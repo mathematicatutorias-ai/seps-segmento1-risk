@@ -3,7 +3,9 @@
     "ruc": "0190087603001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO ALFONSO JARAMILLO LEON CAJA",
     "first_seen": "2021-06-30",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC ALFONSO JARAMILLO LEON CAJA",
+    "aliases": []
   },
   "series": [
     {
@@ -1969,7 +1971,7 @@
       "score": -1.1046008413605102,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.751148381271373, \"robust_z\": 1.1046008413605102, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -1979,7 +1981,7 @@
       "score": -1.2004856926677905,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.08713955358846756, \"robust_z\": -1.2004856926677905, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -1989,7 +1991,7 @@
       "score": 0.578093044311964,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.04008796544702886, \"robust_z\": -0.578093044311964, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -1999,7 +2001,7 @@
       "score": -0.21600450229526205,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.0914948932726625, \"robust_z\": 0.21600450229526205, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2009,7 +2011,7 @@
       "score": -0.8154625525361221,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.3200247997348743, \"robust_z\": 0.8154625525361221, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

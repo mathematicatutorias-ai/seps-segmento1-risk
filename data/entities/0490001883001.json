@@ -3,7 +3,9 @@
     "ruc": "0490001883001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO PABLO MUÃ‘OZ VEGA LIMITADA",
     "first_seen": "2018-01-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC PABLO MUÃ‘OZ VEGA LIMITADA",
+    "aliases": []
   },
   "series": [
     {
@@ -3240,7 +3242,7 @@
       "score": 1.0742497965573605,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.2967068572460577, \"robust_z\": -1.0742497965573605, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3250,7 +3252,7 @@
       "score": 1.087851187797059,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.07575752905711622, \"robust_z\": 1.087851187797059, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3260,7 +3262,7 @@
       "score": 2.138096842835261,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.01220021104446578, \"robust_z\": -2.138096842835261, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3270,7 +3272,7 @@
       "score": -1.3175105964431486,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.07859237283777563, \"robust_z\": 1.3175105964431486, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3280,7 +3282,7 @@
       "score": 0.5412920189881483,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.3936951819529979, \"robust_z\": -0.5412920189881483, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

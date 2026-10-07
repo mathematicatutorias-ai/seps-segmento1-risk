@@ -1,5 +1,5 @@
 const C={blue:'#1767d2',blue2:'#84b6ff',red:'#ef476f',green:'#18a06f',amber:'#f0a11a',purple:'#8b5cf6',grid:'#e8eef6',ink:'#0d2a4f',muted:'#65758b'};
-let META={},ENTITIES=[],PEERS={feature_stats:{},risk_stats:[],latest_distributions:{}},LOAD={},D={series:[],signals:[],risk_estimates:[],percentiles:{},risk_index:{}},DEMO=false;
+let META={},ENTITIES=[],ENTITY_INDEX=[],CURRENT_RUC=null,ENTITY_ACTIVE=-1,PEERS={feature_stats:{},risk_stats:[],latest_distributions:{}},LOAD={},D={series:[],signals:[],risk_estimates:[],percentiles:{},risk_index:{}},DEMO=false;
 const $=id=>document.getElementById(id);
 const pct=x=>x==null||!Number.isFinite(Number(x))?'—':(100*Number(x)).toFixed(1)+'%';
 const num=x=>x==null||!Number.isFinite(Number(x))?'—':Number(x).toLocaleString('es-EC',{maximumFractionDigits:1});
@@ -19,17 +19,17 @@ async function boot(){
   const live=window.SEPS_LIVE_DATA||null;
   if(live && Array.isArray(live.entities) && live.entities.length){
     META=live.metadata||{};ENTITIES=live.entities||[];PEERS=live.peers||PEERS;LOAD=window.SEPS_LOAD_STATUS||window.SEPS_BUILD_INFO||{};
-    buildEntitySelector();let q=new URLSearchParams(location.search).get('entity');let ruc=ENTITIES.some(e=>String(e.ruc)===String(q))?q:(META.default_ruc||ENTITIES[0].ruc);$('entitySelect').value=ruc;await loadEntity(ruc);
+    buildEntitySelector();let q=new URLSearchParams(location.search).get('entity');let ruc=ENTITIES.some(e=>String(e.ruc)===String(q))?q:(META.default_ruc||ENTITIES[0].ruc);setEntitySelectorValue(ruc);await loadEntity(ruc);
   }else{
     try{META=await getJSON('data/metadata.json');ENTITIES=await getJSON('data/entities.json');PEERS=await getJSON('data/peers.json');try{LOAD=await getJSON('data/load_status.json')}catch(_){LOAD={}}}catch(_){META={mode:'empty',title:'Monitor de Riesgo Financiero',subtitle:'Sin datos cargados'};ENTITIES=[]}
-    if(!ENTITIES.length)activateDemo();else{buildEntitySelector();let ruc=META.default_ruc||ENTITIES[0].ruc;$('entitySelect').value=ruc;await loadEntity(ruc)}
+    if(!ENTITIES.length)activateDemo();else{buildEntitySelector();let ruc=META.default_ruc||ENTITIES[0].ruc;setEntitySelectorValue(ruc);await loadEntity(ruc)}
   }
   setDefaults();bindEvents();render();renderStaticStatus();
 }
 
 function bindEvents(){
   ['period','agg','viz','mainMetric','horizon','distributionMetric'].forEach(id=>{if($(id))$(id).onchange=render});
-  $('entitySelect').onchange=async e=>{let r=e.target.value;try{history.replaceState(null,'',`${location.pathname}?entity=${encodeURIComponent(r)}`)}catch(_){}await loadEntity(r)};
+  bindEntitySearch();
   const toggle=$('sidebarToggle');if(toggle){toggle.onclick=()=>{let app=$('appRoot');let open=!app.classList.contains('sidebar-open');app.classList.toggle('sidebar-open',open);try{localStorage.setItem('seps_sidebar_open',open?'1':'0')}catch(_){}};try{if(localStorage.getItem('seps_sidebar_open')==='1')$('appRoot').classList.add('sidebar-open')}catch(_){}}
   if($('methodologyOpen'))$('methodologyOpen').onclick=openMethodology;
   if($('methodologyClose'))$('methodologyClose').onclick=closeMethodology;
@@ -37,12 +37,81 @@ function bindEvents(){
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMethodology()});
 }
 function setDefaults(){let d=META.dashboard_defaults||{};if(d.default_period&&[...$('period').options].some(o=>o.value===String(d.default_period)))$('period').value=String(d.default_period);if(d.default_aggregation)$('agg').value=d.default_aggregation;if(d.default_visualization)$('viz').value=d.default_visualization}
-function buildEntitySelector(){$('entitySelect').innerHTML=ENTITIES.map(e=>`<option value="${esc(e.ruc)}">${esc(e.entity_name)}</option>`).join('')}
-async function loadEntity(ruc){const live=window.SEPS_LIVE_DATA||null;if(live?.entity_data?.[String(ruc)])D=live.entity_data[String(ruc)];else D=await getJSON(`data/entities/${encodeURIComponent(ruc)}.json`);DEMO=false;$('demoWatermark').classList.add('hidden');render()}
-function activateDemo(){DEMO=true;META={...META,mode:'demo',focus_display_name:'DEMO',publication:{academic_notice:'MODO DEMO',disclaimer:'Datos sintéticos únicamente para visualizar la interfaz.'},risk_index:{bands:{low_max:33,medium_max:66}}};ENTITIES=[{ruc:'DEMO',entity_name:'DEMO — SIN DATOS REALES'}];buildEntitySelector();$('entitySelect').value='DEMO';D=demo();$('demoBanner').classList.remove('hidden');$('demoBanner').textContent='MODO DEMO · Estas curvas son sintéticas. Ejecute MASTER_SEPS.ipynb para cargar información oficial.';$('demoWatermark').classList.remove('hidden')}
+function normalizeEntitySearch(x){return String(x??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[^A-Z0-9]+/g,' ').trim()}
+function shortEntityName(name){
+  let n=String(name??'').replace(/\s+/g,' ').trim();
+  n=n.replace(/^COOPERATIVA\s+DE\s+AHORRO\s+Y\s+CREDITO\s+/i,'COAC ');
+  n=n.replace(/^ASOCIACION\s+MUTUALISTA\s+DE\s+AHORRO\s+Y\s+CREDITO\s+PARA\s+LA\s+VIVIENDA\s+/i,'MUTUALISTA ');
+  return n;
+}
+function entityAcronyms(name){
+  let d=shortEntityName(name),kind=d.startsWith('COAC ')?'C':d.startsWith('MUTUALISTA ')?'M':'';
+  let core=d.replace(/^COAC\s+/i,'').replace(/^MUTUALISTA\s+/i,'')
+    .replace(/\b(LIMITADA|LTDA|LTDA\.|CIA|COMPANIA|SOCIEDAD)\b/gi,' ');
+  let stop=new Set(['DE','DEL','LA','LAS','EL','LOS','Y','PARA','EN','AHORRO','CREDITO']);
+  let toks=normalizeEntitySearch(core).split(/\s+/).filter(x=>x&&!stop.has(x));
+  let ac=toks.map(x=>x[0]).join(''),pref=kind&&ac&&ac.length<=2?kind+ac:'';
+  return [...new Set([pref||ac,ac].filter(Boolean))];
+}
+function entityAliases(e){
+  let fromEntity=Array.isArray(e.aliases)?e.aliases:[];
+  let fromMeta=META.entity_aliases?.[String(e.ruc)]||[];
+  return [...new Set([...fromEntity,...fromMeta,...entityAcronyms(e.entity_name)])];
+}
+function enrichEntity(e){
+  let display=e.display_name||shortEntityName(e.entity_name),aliases=entityAliases(e);
+  return {...e,display_name:display,aliases,search_blob:normalizeEntitySearch([e.ruc,e.entity_name,display,...aliases].join(' '))};
+}
+function buildEntitySelector(){ENTITY_INDEX=ENTITIES.map(enrichEntity).sort((a,b)=>(a.display_name||'').localeCompare(b.display_name||'','es',{sensitivity:'base'}));renderEntityResults('')}
+function entityByRuc(ruc){return ENTITY_INDEX.find(e=>String(e.ruc)===String(ruc))||ENTITIES.find(e=>String(e.ruc)===String(ruc))||null}
+function setEntitySelectorValue(ruc){CURRENT_RUC=String(ruc??'');let e=entityByRuc(CURRENT_RUC);if($('entitySearch'))$('entitySearch').value=e?.display_name||e?.entity_name||''}
+function filterEntities(q){
+  let term=normalizeEntitySearch(q),rows=ENTITY_INDEX;
+  if(term)rows=rows.filter(e=>e.search_blob.includes(term));
+  // 017: no artificial cap. Empty search lists every entity available in the bundle;
+  // typed search filters that full universe by RUC/name/alias/acronym.
+  return rows;
+}
+function renderEntityResults(q){
+  let box=$('entityResults');if(!box)return;let rows=filterEntities(q);ENTITY_ACTIVE=rows.length?0:-1;
+  box.innerHTML=rows.length?rows.map((e,i)=>{
+    let alias=e.aliases?.length?`<span class="entity-alias">${esc(e.aliases[0])}</span>`:'';
+    let last=e.last_seen?` · corte ${esc(String(e.last_seen).slice(0,10))}`:'';
+    return `<button type="button" class="entity-result${i===ENTITY_ACTIVE?' active':''}" role="option" aria-selected="${i===ENTITY_ACTIVE?'true':'false'}" data-ruc="${esc(e.ruc)}"><span class="entity-result-main"><strong>${esc(e.display_name)}</strong>${alias}</span><span class="entity-result-meta">RUC ${esc(e.ruc)}${last}</span><small>${esc(e.entity_name)}</small></button>`
+  }).join(''):`<div class="entity-no-results">Sin coincidencias. Busca por nombre, sigla o RUC.</div>`;
+  box.querySelectorAll('.entity-result').forEach(x=>x.onclick=()=>selectEntity(x.dataset.ruc));
+}
+function openEntityResults(){let box=$('entityResults');if(!box)return;renderEntityResults('');box.classList.remove('hidden');$('entitySearch').setAttribute('aria-expanded','true')}
+function closeEntityResults(){let box=$('entityResults');if(box)box.classList.add('hidden');if($('entitySearch'))$('entitySearch').setAttribute('aria-expanded','false');ENTITY_ACTIVE=-1}
+function moveEntityActive(step){
+  let rows=[...document.querySelectorAll('#entityResults .entity-result')];if(!rows.length)return;
+  ENTITY_ACTIVE=(ENTITY_ACTIVE+step+rows.length)%rows.length;
+  rows.forEach((x,i)=>{x.classList.toggle('active',i===ENTITY_ACTIVE);x.setAttribute('aria-selected',i===ENTITY_ACTIVE?'true':'false')});
+  rows[ENTITY_ACTIVE]?.scrollIntoView({block:'nearest'});
+}
+async function selectEntity(ruc){
+  let e=entityByRuc(ruc);if(!e)return;setEntitySelectorValue(ruc);closeEntityResults();
+  try{history.replaceState(null,'',`${location.pathname}?entity=${encodeURIComponent(ruc)}`)}catch(_){}
+  await loadEntity(ruc);
+}
+function bindEntitySearch(){
+  let inp=$('entitySearch'),toggle=$('entityToggle');if(!inp)return;
+  inp.onfocus=openEntityResults;
+  inp.oninput=()=>{renderEntityResults(inp.value);$('entityResults').classList.remove('hidden');inp.setAttribute('aria-expanded','true')};
+  inp.onkeydown=e=>{
+    if(e.key==='ArrowDown'){e.preventDefault();if($('entityResults').classList.contains('hidden'))openEntityResults();else moveEntityActive(1)}
+    else if(e.key==='ArrowUp'){e.preventDefault();moveEntityActive(-1)}
+    else if(e.key==='Enter'){let rows=[...document.querySelectorAll('#entityResults .entity-result')];if(rows.length){e.preventDefault();let row=rows[Math.max(0,ENTITY_ACTIVE)];selectEntity(row.dataset.ruc)}}
+    else if(e.key==='Escape'){closeEntityResults();let x=entityByRuc(CURRENT_RUC);inp.value=x?.display_name||x?.entity_name||''}
+  };
+  if(toggle)toggle.onclick=()=>{if($('entityResults').classList.contains('hidden')){inp.focus();openEntityResults()}else closeEntityResults()};
+  document.addEventListener('pointerdown',e=>{if(!$('entityCombobox')?.contains(e.target))closeEntityResults()});
+}
+async function loadEntity(ruc){CURRENT_RUC=String(ruc);setEntitySelectorValue(ruc);const live=window.SEPS_LIVE_DATA||null;if(live?.entity_data?.[String(ruc)])D=live.entity_data[String(ruc)];else D=await getJSON(`data/entities/${encodeURIComponent(ruc)}.json`);DEMO=false;$('demoWatermark').classList.add('hidden');render()}
+function activateDemo(){DEMO=true;META={...META,mode:'demo',focus_display_name:'DEMO',publication:{academic_notice:'MODO DEMO',disclaimer:'Datos sintéticos únicamente para visualizar la interfaz.'},risk_index:{bands:{low_max:33,medium_max:66}}};ENTITIES=[{ruc:'DEMO',entity_name:'DEMO — SIN DATOS REALES',display_name:'DEMO — SIN DATOS REALES'}];buildEntitySelector();setEntitySelectorValue('DEMO');D=demo();$('demoBanner').classList.remove('hidden');$('demoBanner').textContent='MODO DEMO · Estas curvas son sintéticas. Ejecute MASTER_SEPS.ipynb para cargar información oficial.';$('demoWatermark').classList.remove('hidden')}
 function demo(){let s=[],m=.025,dep=8e8,liq=.24,eq=.11,roa=.008;for(let i=0;i<100;i++){let d=new Date(Date.UTC(2018,i,28)).toISOString().slice(0,10),wave=Math.sin(i*.42);m=Math.max(.01,m+(i>65?.0007:0)+wave*.0003);dep*=1+.006+Math.sin(i*.7)*.005;liq=Math.max(.07,liq+Math.sin(i*.5)*.002-(i>72?.001:0));eq=Math.max(.06,eq+Math.sin(i*.35)*.0008);roa=.007+Math.sin(i*.55)*.004;s.push({cutoff_date:d,delinquency_ratio:m,coverage_ratio:Math.max(.25,1.3-m*9),liquidity_ratio:liq,deposits_total:dep,equity_assets_ratio:eq,roa_proxy:roa})}for(let i=3;i<s.length;i++)s[i].deposit_growth_3m=s[i].deposits_total/s[i-3].deposits_total-1;let ri=s.map((x,i)=>({cutoff_date:x.cutoff_date,risk_index:Math.min(90,28+i*.45)}));return{entity:{ruc:'DEMO',entity_name:'DEMO — SIN DATOS REALES'},series:s,signals:[],risk_estimates:[],percentiles:{delinquency_ratio:{favorable_percentile:15,risk_percentile:85},coverage_ratio:{favorable_percentile:24,risk_percentile:76},liquidity_ratio:{favorable_percentile:72,risk_percentile:28},deposit_growth_3m:{favorable_percentile:66,risk_percentile:34},equity_assets_ratio:{favorable_percentile:48,risk_percentile:52},roa_proxy:{favorable_percentile:58,risk_percentile:42}},risk_index:{current:ri.at(-1).risk_index,label:'Alto',bands:{low_max:33,medium_max:66},series:ri,contributors:[{feature:'delinquency_ratio',contribution_points:25},{feature:'coverage_ratio',contribution_points:18},{feature:'equity_assets_ratio',contribution_points:9},{feature:'deposit_growth_3m',contribution_points:7},{feature:'liquidity_ratio',contribution_points:6},{feature:'roa_proxy',contribution_points:4}],method:'Índice relativo demo'}}}
 function A(){let a=(D.series||[]).slice(),n=$('period').value;if(n!=='all')a=a.slice(-Number(n));return a}
-function entityDisplayName(){if(String(D.entity?.ruc)===String(META.default_ruc)&&META.focus_display_name)return META.focus_display_name;let n=D.entity?.entity_name||'Entidad';return n.length>42?n.split(' ').filter(Boolean).slice(0,5).join(' '):n}
+function entityDisplayName(){if(String(D.entity?.ruc)===String(META.default_ruc)&&META.focus_display_name)return META.focus_display_name;let e=entityByRuc(D.entity?.ruc);let n=e?.display_name||shortEntityName(D.entity?.entity_name||'Entidad');return n.length>54?n.slice(0,52).trim()+'…':n}
 function lay(fmt='.1%',extra={}){return{margin:{l:48,r:12,t:22,b:40},paper_bgcolor:'transparent',plot_bgcolor:'transparent',font:{family:'Inter,system-ui',size:10,color:'#52637a'},xaxis:{gridcolor:C.grid,zeroline:false},yaxis:{gridcolor:C.grid,tickformat:fmt,zeroline:false},legend:{orientation:'h',y:1.08,x:.02},hovermode:'x unified',...extra}}
 function line(a,f,n,c,width=2){return{x:a.map(x=>x.cutoff_date),y:a.map(x=>x[f]),type:'scatter',mode:'lines',name:n,line:{color:c,width}}}
 function bucketKey(d){let x=new Date(d),y=x.getUTCFullYear(),m=x.getUTCMonth(),a=$('agg').value;return a==='quarterly'?`${y}-Q${Math.floor(m/3)+1}`:a==='semiannual'?`${y}-S${m<6?1:2}`:`${y}`}
@@ -74,7 +143,7 @@ function riskScoreForRow(row){if(!row)return null;let h=Number($('horizon')?.val
 function renderKpiTrends(a,z,R){let prev=previousPeriodRow(a);setTrend('trendMora',z.delinquency_ratio,prev?.delinquency_ratio,'lower');setTrend('trendCoverage',z.coverage_ratio,prev?.coverage_ratio,'higher');setTrend('trendLiquidity',z.liquidity_ratio,prev?.liquidity_ratio,'higher');setTrend('trendDeposits',z.deposit_growth_3m,prev?.deposit_growth_3m,'higher');setTrend('trendEquity',z.equity_assets_ratio,prev?.equity_assets_ratio,'higher');setTrend('trendRisk',R?.score,riskScoreForRow(prev),'lower','score')}
 function currentRisk(z){let h=Number($('horizon').value),r=riskAt(h,z.cutoff_date);if(r&&r.probability!=null&&Number.isFinite(Number(r.probability)))return{mode:'probability',score:100*Number(r.probability),label:'Probabilidad estimada',detail:`evento adverso · ${h}m`,record:r};let raw=D.risk_index?.current;if(raw!=null&&raw!==''&&Number.isFinite(Number(raw))){let score=Number(raw);CURRENT_RISK_SNAPSHOT={score,contributors:D.risk_index?.contributors||[],components:(D.risk_index?.contributors||[]).length,weight_coverage:null};return{mode:'index',score,label:'Índice de riesgo relativo',detail:'0–100 · no es probabilidad',record:null}}let snap=computeRiskSnapshot(z);CURRENT_RISK_SNAPSHOT=snap;if(snap)return{mode:'index',score:snap.score,label:'Índice de riesgo relativo',detail:'0–100 · no es probabilidad',record:null};return{mode:'none',score:null,label:'Índice de riesgo',detail:'sin datos',record:null}}
 
-function render(){let a=A(),z=a.at(-1)||{},short=entityDisplayName();$('title').textContent=`${short} · Monitor de Riesgo Financiero`;$('subtitle').textContent=`${D.entity?.entity_name||''} · ${META.subtitle||'Información pública SEPS · Segmento 1'}`;$('cutoffSide').textContent=z.cutoff_date||'—';$('cutoffTop').textContent=z.cutoff_date||'—';$('footerCutoff').textContent=z.cutoff_date||'—';$('kpiMora').textContent=pct(z.delinquency_ratio);$('kpiCoverage').textContent=pct(z.coverage_ratio);$('kpiLiquidity').textContent=pct(z.liquidity_ratio);$('kpiDeposits').textContent=pct(z.deposit_growth_3m);$('kpiEquity').textContent=pct(z.equity_assets_ratio);
+function render(){let a=A(),z=a.at(-1)||{},short=entityDisplayName();$('title').textContent='MONITOR DE RIESGO FINANCIERO';$('subtitle').textContent=`${D.entity?.entity_name||''} · ${META.subtitle||'Información pública SEPS · Segmento 1'}`;$('cutoffSide').textContent=z.cutoff_date||'—';$('cutoffTop').textContent=z.cutoff_date||'—';$('footerCutoff').textContent=z.cutoff_date||'—';$('kpiMora').textContent=pct(z.delinquency_ratio);$('kpiCoverage').textContent=pct(z.coverage_ratio);$('kpiLiquidity').textContent=pct(z.liquidity_ratio);$('kpiDeposits').textContent=pct(z.deposit_growth_3m);$('kpiEquity').textContent=pct(z.equity_assets_ratio);
  let R=currentRisk(z);$('riskKpiLabel').textContent=R.label;$('kpiInference').textContent=R.score==null?'—':R.mode==='probability'?R.score.toFixed(1)+'%':Math.round(R.score)+'/100';$('inferenceNote').textContent=R.score==null?'sin estimación':`${riskLabel(R.score)} · ${R.detail}`;renderKpiTrends(a,z,R);
  let f=$('mainMetric').value,m=METRICS[f]||{label:FEATURE_LABELS[f]||f,subtitle:'Entidad vs Segmento 1',fmt:'.1%'};$('mainTitle').textContent=`${m.label} · entidad vs Segmento 1`;$('mainSubtitle').textContent=`${m.subtitle}. Mensual = línea; periodos agregados = OHLC.`;Plotly.react('mainChart',metricTraces(a,f,short),lay(m.fmt),{displayModeBar:false,responsive:true});
  plotMetric('depositsChart',a,'deposits_total',short,',.3s');plotMetric('liquidityChart',a,'liquidity_ratio',short,'.1%');plotMetric('equityChart',a,'equity_assets_ratio',short,'.1%');plotMetric('roaChart',a,'roa_proxy',short,'.1%');

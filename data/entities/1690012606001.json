@@ -3,7 +3,9 @@
     "ruc": "1690012606001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO DE LA PEQUEÃ‘A EMPRESA DE PASTAZA LIMITADA",
     "first_seen": "2018-01-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC DE LA PEQUEÃ‘A EMPRESA DE PASTAZA LIMITADA",
+    "aliases": []
   },
   "series": [
     {
@@ -3240,7 +3242,7 @@
       "score": -1.5780940180278433,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 1.2872415411795544, \"robust_z\": 1.5780940180278433, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3250,7 +3252,7 @@
       "score": -2.0640361038972896,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.046942541251113204, \"robust_z\": -2.0640361038972896, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3260,7 +3262,7 @@
       "score": 0.5057135116946201,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.03330881364885463, \"robust_z\": -0.5057135116946201, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3270,7 +3272,7 @@
       "score": -0.5665998054403343,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.16283782200105232, \"robust_z\": 0.5665998054403343, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3280,7 +3282,7 @@
       "score": 0.8422570846653983,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.2845729643514623, \"robust_z\": -0.8422570846653983, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

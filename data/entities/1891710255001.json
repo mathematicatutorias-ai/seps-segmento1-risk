@@ -3,7 +3,9 @@
     "ruc": "1891710255001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO KULLKI WASI LTDA",
     "first_seen": "2019-06-30",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC KULLKI WASI LTDA",
+    "aliases": []
   },
   "series": [
     {
@@ -2713,7 +2715,7 @@
       "score": 0.038009534268437076,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.6984991193639567, \"robust_z\": -0.038009534268437076, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2723,7 +2725,7 @@
       "score": -0.8234483863469532,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.09827353377609802, \"robust_z\": -0.8234483863469532, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2733,7 +2735,7 @@
       "score": 0.009665963805246416,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.029031571141502233, \"robust_z\": -0.009665963805246416, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2743,7 +2745,7 @@
       "score": -1.6734456910550466,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.0908959949089042, \"robust_z\": 1.6734456910550466, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -2753,7 +2755,7 @@
       "score": 0.41599496001744823,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.48204890594006444, \"robust_z\": -0.41599496001744823, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

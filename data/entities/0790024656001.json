@@ -3,7 +3,9 @@
     "ruc": "0790024656001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO SANTA ROSA LIMITADA",
     "first_seen": "2018-01-31",
-    "last_seen": "2026-08-31"
+    "last_seen": "2026-08-31",
+    "display_name": "COAC SANTA ROSA LIMITADA",
+    "aliases": []
   },
   "series": [
     {
@@ -3240,7 +3242,7 @@
       "score": -0.5200994168638361,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.6913853073108636, \"robust_z\": 0.5200994168638361, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3250,7 +3252,7 @@
       "score": 0.5755963488709307,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.10873310875672566, \"robust_z\": 0.5755963488709307, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3260,7 +3262,7 @@
       "score": 0.7584461682076439,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": -0.004533197747241091, \"robust_z\": -0.7584461682076439, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3270,7 +3272,7 @@
       "score": -0.04297242833467805,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.18644066599012613, \"robust_z\": 0.04297242833467805, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2026-08-31",
@@ -3280,7 +3282,7 @@
       "score": -0.38620557413818557,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.2377176475601535, \"robust_z\": 0.38620557413818557, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],

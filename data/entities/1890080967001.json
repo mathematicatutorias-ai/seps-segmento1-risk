@@ -3,7 +3,9 @@
     "ruc": "1890080967001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO CAMARA DE COMERCIO DE AMBATO LTDA",
     "first_seen": "2018-01-31",
-    "last_seen": "2024-10-31"
+    "last_seen": "2024-10-31",
+    "display_name": "COAC CAMARA DE COMERCIO DE AMBATO LTDA",
+    "aliases": []
   },
   "series": [
     {
@@ -2558,7 +2560,7 @@
       "score": 1.1648107983793898,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.33313236264966906, \"robust_z\": -1.1648107983793898, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2024-10-31",
@@ -2568,7 +2570,7 @@
       "score": 5.193206057365208,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.07972260466036185, \"robust_z\": 5.193206057365208, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2024-10-31",
@@ -2578,7 +2580,7 @@
       "score": 0.508366009933556,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": -0.06460660847831146, \"robust_z\": -0.508366009933556, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2024-10-31",
@@ -2588,7 +2590,7 @@
       "score": -10.7412501649532,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.09637921675710484, \"robust_z\": 10.7412501649532, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     },
     {
       "cutoff_date": "2024-10-31",
@@ -2598,7 +2600,7 @@
       "score": 1.8502357026595835,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.26010510010980914, \"robust_z\": -1.8502357026595835, \"window_months\": 24}",
-      "calculated_at": "2026-09-21T17:54:25.951754+00:00"
+      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
     }
   ],
   "risk_estimates": [],
