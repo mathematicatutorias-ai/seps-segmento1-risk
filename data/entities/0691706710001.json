@@ -3,7 +3,7 @@
     "ruc": "0691706710001",
     "entity_name": "COOPERATIVA DE AHORRO Y CREDITO FERNANDO DAQUILEMA LIMITADA",
     "first_seen": "2018-05-31",
-    "last_seen": "2026-08-31",
+    "last_seen": "2026-09-30",
     "display_name": "COAC FERNANDO DAQUILEMA LIMITADA",
     "aliases": []
   },
@@ -3107,261 +3107,292 @@
       "refinanced": 6364.66,
       "restructured": 121417.11,
       "roa_proxy": 0.002900236707670341
+    },
+    {
+      "cutoff_date": "2026-09-30",
+      "assets": 840754205.04,
+      "available_funds": 158910014.56,
+      "coverage_ratio": 1.236255838370741,
+      "delinquency_ratio": 0.05829643965786346,
+      "deposit_growth_12m": 0.12342739802593261,
+      "deposit_growth_3m": 0.03427954102904618,
+      "deposits_181_360": 167620788.77,
+      "deposits_1_30": 54974330.97,
+      "deposits_31_90": 100284206.51,
+      "deposits_361_plus": 32825421.23,
+      "deposits_91_180": 137945653.65,
+      "deposits_short_term": 389318754.53000003,
+      "deposits_total": 727761618.18,
+      "equity": 75139010.8,
+      "equity_assets_ratio": 0.0893709604419108,
+      "expenses": 64295316.02,
+      "income": 67511000.13,
+      "liabilities": 762399510.13,
+      "liquidity_fund_obligations": 0.0,
+      "liquidity_ratio": 0.40817456829646453,
+      "loan_portfolio_gross": 581630572.4499999,
+      "loan_portfolio_net": 539712856.16,
+      "loan_provisions": -41917716.29,
+      "nonperforming_loans_post_2021_05": 33906991.57,
+      "nonperforming_loans_pre_2021_05": 33906991.57,
+      "refinanced": 6493.04,
+      "restructured": 151408.85,
+      "roa_proxy": 0.003824761256884825
     }
   ],
   "signals": [
     {
-      "cutoff_date": "2026-08-31",
+      "cutoff_date": "2026-09-30",
       "ruc": "0691706710001",
       "signal": "coverage_ratio",
-      "value": 1.2167406727793286,
-      "score": -2.430589348886124,
+      "value": 1.236255838370741,
+      "score": -2.1680854804882848,
       "direction": "lower_bad",
-      "detail": "{\"median_hist\": 1.0100375647143034, \"robust_z\": 2.430589348886124, \"window_months\": 24}",
-      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
+      "detail": "{\"median_hist\": 1.0100375647143034, \"robust_z\": 2.1680854804882848, \"window_months\": 24}",
+      "calculated_at": "2026-10-19T02:34:44.019825+00:00"
     },
     {
-      "cutoff_date": "2026-08-31",
+      "cutoff_date": "2026-09-30",
       "ruc": "0691706710001",
       "signal": "delinquency_ratio",
-      "value": 0.060169623603910885,
-      "score": -1.45803978028154,
+      "value": 0.05829643965786346,
+      "score": -1.8478633347289837,
       "direction": "higher_bad",
-      "detail": "{\"median_hist\": 0.06717581057738203, \"robust_z\": -1.45803978028154, \"window_months\": 24}",
-      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
+      "detail": "{\"median_hist\": 0.06717581057738203, \"robust_z\": -1.8478633347289837, \"window_months\": 24}",
+      "calculated_at": "2026-10-19T02:34:44.019825+00:00"
     },
     {
-      "cutoff_date": "2026-08-31",
+      "cutoff_date": "2026-09-30",
       "ruc": "0691706710001",
       "signal": "deposit_growth_3m",
-      "value": 0.04282581762058002,
-      "score": 0.41886709016797913,
+      "value": 0.03427954102904618,
+      "score": 0.5685215689010663,
       "direction": "lower_bad",
-      "detail": "{\"median_hist\": 0.05922995687165078, \"robust_z\": -0.41886709016797913, \"window_months\": 24}",
-      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
+      "detail": "{\"median_hist\": 0.05243100805496714, \"robust_z\": -0.5685215689010663, \"window_months\": 24}",
+      "calculated_at": "2026-10-19T02:34:44.019825+00:00"
     },
     {
-      "cutoff_date": "2026-08-31",
+      "cutoff_date": "2026-09-30",
       "ruc": "0691706710001",
       "signal": "equity_assets_ratio",
-      "value": 0.08893157307530601,
-      "score": 0.7287747469716624,
+      "value": 0.0893709604419108,
+      "score": 0.5970662701661164,
       "direction": "lower_bad",
-      "detail": "{\"median_hist\": 0.0917235571813747, \"robust_z\": -0.7287747469716624, \"window_months\": 24}",
-      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
+      "detail": "{\"median_hist\": 0.09165836068938168, \"robust_z\": -0.5970662701661164, \"window_months\": 24}",
+      "calculated_at": "2026-10-19T02:34:44.019825+00:00"
     },
     {
-      "cutoff_date": "2026-08-31",
+      "cutoff_date": "2026-09-30",
       "ruc": "0691706710001",
       "signal": "liquidity_ratio",
-      "value": 0.4352238674703698,
-      "score": 0.93495787459696,
+      "value": 0.40817456829646453,
+      "score": 1.2294689312157674,
       "direction": "lower_bad",
-      "detail": "{\"median_hist\": 0.5210948549820718, \"robust_z\": -0.93495787459696, \"window_months\": 24}",
-      "calculated_at": "2026-10-07T04:35:06.206983+00:00"
+      "detail": "{\"median_hist\": 0.5210948549820718, \"robust_z\": -1.2294689312157674, \"window_months\": 24}",
+      "calculated_at": "2026-10-19T02:34:44.019825+00:00"
     }
   ],
   "risk_estimates": [],
   "percentiles": {
-    "restructured": {
-      "raw_percentile": 20.833333333333336,
-      "favorable_percentile": 20.833333333333336,
-      "risk_percentile": 79.16666666666666,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "liquidity_fund_obligations": {
-      "raw_percentile": 100.0,
-      "favorable_percentile": 100.0,
-      "risk_percentile": 0.0,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "nonperforming_loans_pre_2021_05": {
-      "raw_percentile": 77.08333333333334,
-      "favorable_percentile": 77.08333333333334,
-      "risk_percentile": 22.916666666666657,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
     "nonperforming_loans_post_2021_05": {
       "raw_percentile": 77.08333333333334,
       "favorable_percentile": 77.08333333333334,
       "risk_percentile": 22.916666666666657,
       "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "refinanced": {
-      "raw_percentile": 14.583333333333334,
-      "favorable_percentile": 14.583333333333334,
-      "risk_percentile": 85.41666666666667,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "deposit_growth_3m": {
-      "raw_percentile": 89.36170212765957,
-      "favorable_percentile": 89.36170212765957,
-      "risk_percentile": 10.63829787234043,
-      "n": 47,
-      "cutoff_date": "2026-08-31"
-    },
-    "delinquency_ratio": {
-      "raw_percentile": 33.33333333333333,
-      "favorable_percentile": 66.66666666666667,
-      "risk_percentile": 33.33333333333333,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "coverage_ratio": {
-      "raw_percentile": 64.58333333333334,
-      "favorable_percentile": 64.58333333333334,
-      "risk_percentile": 35.41666666666666,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "liquidity_ratio": {
-      "raw_percentile": 83.33333333333334,
-      "favorable_percentile": 83.33333333333334,
-      "risk_percentile": 16.666666666666657,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "equity_assets_ratio": {
-      "raw_percentile": 16.666666666666664,
-      "favorable_percentile": 16.666666666666664,
-      "risk_percentile": 83.33333333333334,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
+      "cutoff_date": "2026-09-30"
     },
     "deposits_361_plus": {
       "raw_percentile": 89.58333333333334,
       "favorable_percentile": 89.58333333333334,
       "risk_percentile": 10.416666666666657,
       "n": 48,
-      "cutoff_date": "2026-08-31"
+      "cutoff_date": "2026-09-30"
+    },
+    "liquidity_fund_obligations": {
+      "raw_percentile": 100.0,
+      "favorable_percentile": 100.0,
+      "risk_percentile": 0.0,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "nonperforming_loans_pre_2021_05": {
+      "raw_percentile": 77.08333333333334,
+      "favorable_percentile": 77.08333333333334,
+      "risk_percentile": 22.916666666666657,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "restructured": {
+      "raw_percentile": 22.916666666666664,
+      "favorable_percentile": 22.916666666666664,
+      "risk_percentile": 77.08333333333334,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "equity_assets_ratio": {
+      "raw_percentile": 14.583333333333334,
+      "favorable_percentile": 14.583333333333334,
+      "risk_percentile": 85.41666666666667,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
     },
     "loan_portfolio_gross": {
       "raw_percentile": 89.58333333333334,
       "favorable_percentile": 89.58333333333334,
       "risk_percentile": 10.416666666666657,
       "n": 48,
-      "cutoff_date": "2026-08-31"
+      "cutoff_date": "2026-09-30"
     },
-    "deposits_181_360": {
-      "raw_percentile": 83.33333333333334,
-      "favorable_percentile": 83.33333333333334,
-      "risk_percentile": 16.666666666666657,
+    "delinquency_ratio": {
+      "raw_percentile": 33.33333333333333,
+      "favorable_percentile": 66.66666666666667,
+      "risk_percentile": 33.33333333333333,
       "n": 48,
-      "cutoff_date": "2026-08-31"
+      "cutoff_date": "2026-09-30"
     },
-    "loan_provisions": {
-      "raw_percentile": 25.0,
-      "favorable_percentile": 25.0,
-      "risk_percentile": 75.0,
+    "coverage_ratio": {
+      "raw_percentile": 64.58333333333334,
+      "favorable_percentile": 64.58333333333334,
+      "risk_percentile": 35.41666666666666,
       "n": 48,
-      "cutoff_date": "2026-08-31"
+      "cutoff_date": "2026-09-30"
     },
-    "deposits_31_90": {
-      "raw_percentile": 81.25,
-      "favorable_percentile": 81.25,
-      "risk_percentile": 18.75,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "deposits_1_30": {
+    "liquidity_ratio": {
       "raw_percentile": 79.16666666666666,
       "favorable_percentile": 79.16666666666666,
       "risk_percentile": 20.833333333333343,
       "n": 48,
-      "cutoff_date": "2026-08-31"
+      "cutoff_date": "2026-09-30"
     },
-    "deposits_total": {
+    "deposits_181_360": {
       "raw_percentile": 87.5,
       "favorable_percentile": 87.5,
       "risk_percentile": 12.5,
       "n": 48,
-      "cutoff_date": "2026-08-31"
+      "cutoff_date": "2026-09-30"
     },
-    "deposits_short_term": {
-      "raw_percentile": 87.5,
-      "favorable_percentile": 87.5,
-      "risk_percentile": 12.5,
+    "refinanced": {
+      "raw_percentile": 14.583333333333334,
+      "favorable_percentile": 14.583333333333334,
+      "risk_percentile": 85.41666666666667,
       "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "loan_portfolio_net": {
-      "raw_percentile": 89.58333333333334,
-      "favorable_percentile": 89.58333333333334,
-      "risk_percentile": 10.416666666666657,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "available_funds": {
-      "raw_percentile": 91.66666666666666,
-      "favorable_percentile": 91.66666666666666,
-      "risk_percentile": 8.333333333333343,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "income": {
-      "raw_percentile": 87.5,
-      "favorable_percentile": 87.5,
-      "risk_percentile": 12.5,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "expenses": {
-      "raw_percentile": 85.41666666666666,
-      "favorable_percentile": 85.41666666666666,
-      "risk_percentile": 14.583333333333343,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "equity": {
-      "raw_percentile": 70.83333333333334,
-      "favorable_percentile": 70.83333333333334,
-      "risk_percentile": 29.166666666666657,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "liabilities": {
-      "raw_percentile": 87.5,
-      "favorable_percentile": 87.5,
-      "risk_percentile": 12.5,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "assets": {
-      "raw_percentile": 87.5,
-      "favorable_percentile": 87.5,
-      "risk_percentile": 12.5,
-      "n": 48,
-      "cutoff_date": "2026-08-31"
-    },
-    "deposit_growth_12m": {
-      "raw_percentile": 72.3404255319149,
-      "favorable_percentile": 72.3404255319149,
-      "risk_percentile": 27.659574468085097,
-      "n": 47,
-      "cutoff_date": "2026-08-31"
+      "cutoff_date": "2026-09-30"
     },
     "deposits_91_180": {
       "raw_percentile": 83.33333333333334,
       "favorable_percentile": 83.33333333333334,
       "risk_percentile": 16.666666666666657,
       "n": 48,
-      "cutoff_date": "2026-08-31"
+      "cutoff_date": "2026-09-30"
+    },
+    "loan_portfolio_net": {
+      "raw_percentile": 89.58333333333334,
+      "favorable_percentile": 89.58333333333334,
+      "risk_percentile": 10.416666666666657,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "deposits_1_30": {
+      "raw_percentile": 79.16666666666666,
+      "favorable_percentile": 79.16666666666666,
+      "risk_percentile": 20.833333333333343,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "deposits_total": {
+      "raw_percentile": 87.5,
+      "favorable_percentile": 87.5,
+      "risk_percentile": 12.5,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "deposits_short_term": {
+      "raw_percentile": 87.5,
+      "favorable_percentile": 87.5,
+      "risk_percentile": 12.5,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "loan_provisions": {
+      "raw_percentile": 22.916666666666664,
+      "favorable_percentile": 22.916666666666664,
+      "risk_percentile": 77.08333333333334,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "available_funds": {
+      "raw_percentile": 91.66666666666666,
+      "favorable_percentile": 91.66666666666666,
+      "risk_percentile": 8.333333333333343,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "income": {
+      "raw_percentile": 87.5,
+      "favorable_percentile": 87.5,
+      "risk_percentile": 12.5,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "expenses": {
+      "raw_percentile": 85.41666666666666,
+      "favorable_percentile": 85.41666666666666,
+      "risk_percentile": 14.583333333333343,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "equity": {
+      "raw_percentile": 70.83333333333334,
+      "favorable_percentile": 70.83333333333334,
+      "risk_percentile": 29.166666666666657,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "liabilities": {
+      "raw_percentile": 87.5,
+      "favorable_percentile": 87.5,
+      "risk_percentile": 12.5,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "assets": {
+      "raw_percentile": 87.5,
+      "favorable_percentile": 87.5,
+      "risk_percentile": 12.5,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
     },
     "roa_proxy": {
-      "raw_percentile": 54.166666666666664,
-      "favorable_percentile": 54.166666666666664,
-      "risk_percentile": 45.833333333333336,
+      "raw_percentile": 58.333333333333336,
+      "favorable_percentile": 58.333333333333336,
+      "risk_percentile": 41.666666666666664,
       "n": 48,
-      "cutoff_date": "2026-08-31"
+      "cutoff_date": "2026-09-30"
+    },
+    "deposit_growth_3m": {
+      "raw_percentile": 83.33333333333334,
+      "favorable_percentile": 83.33333333333334,
+      "risk_percentile": 16.666666666666657,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "deposits_31_90": {
+      "raw_percentile": 79.16666666666666,
+      "favorable_percentile": 79.16666666666666,
+      "risk_percentile": 20.833333333333343,
+      "n": 48,
+      "cutoff_date": "2026-09-30"
+    },
+    "deposit_growth_12m": {
+      "raw_percentile": 74.46808510638297,
+      "favorable_percentile": 74.46808510638297,
+      "risk_percentile": 25.531914893617028,
+      "n": 47,
+      "cutoff_date": "2026-09-30"
     }
   },
   "risk_index": {
-    "current": 34.09574468085106,
+    "current": 35.416666666666664,
     "label": "Medio",
     "bands": {
       "low_max": 33,
@@ -3767,12 +3798,16 @@
       {
         "cutoff_date": "2026-08-31",
         "risk_index": 34.09574468085106
+      },
+      {
+        "cutoff_date": "2026-09-30",
+        "risk_index": 35.416666666666664
       }
     ],
     "contributors": [
       {
         "feature": "delinquency_ratio",
-        "value": 0.060169623603910885,
+        "value": 0.05829643965786346,
         "weight": 0.3,
         "risk_percentile": 33.33333333333333,
         "weighted_points": 9.999999999999998,
@@ -3780,15 +3815,15 @@
       },
       {
         "feature": "equity_assets_ratio",
-        "value": 0.08893157307530601,
+        "value": 0.0893709604419108,
         "weight": 0.1,
-        "risk_percentile": 83.33333333333334,
-        "weighted_points": 8.333333333333334,
-        "contribution_points": 8.333333333333334
+        "risk_percentile": 85.41666666666667,
+        "weighted_points": 8.541666666666668,
+        "contribution_points": 8.541666666666668
       },
       {
         "feature": "coverage_ratio",
-        "value": 1.2167406727793286,
+        "value": 1.236255838370741,
         "weight": 0.2,
         "risk_percentile": 35.41666666666666,
         "weighted_points": 7.083333333333332,
@@ -3796,27 +3831,27 @@
       },
       {
         "feature": "roa_proxy",
-        "value": 0.002900236707670341,
+        "value": 0.003824761256884825,
         "weight": 0.1,
-        "risk_percentile": 45.833333333333336,
-        "weighted_points": 4.583333333333334,
-        "contribution_points": 4.583333333333334
+        "risk_percentile": 41.666666666666664,
+        "weighted_points": 4.166666666666667,
+        "contribution_points": 4.166666666666667
       },
       {
         "feature": "liquidity_ratio",
-        "value": 0.4352238674703698,
+        "value": 0.40817456829646453,
+        "weight": 0.15,
+        "risk_percentile": 20.833333333333343,
+        "weighted_points": 3.1250000000000013,
+        "contribution_points": 3.1250000000000013
+      },
+      {
+        "feature": "deposit_growth_3m",
+        "value": 0.03427954102904618,
         "weight": 0.15,
         "risk_percentile": 16.666666666666657,
         "weighted_points": 2.4999999999999987,
         "contribution_points": 2.4999999999999987
-      },
-      {
-        "feature": "deposit_growth_3m",
-        "value": 0.04282581762058002,
-        "weight": 0.15,
-        "risk_percentile": 10.63829787234043,
-        "weighted_points": 1.5957446808510645,
-        "contribution_points": 1.5957446808510645
       }
     ],
     "method": "Índice relativo 0–100 construido con percentiles contemporáneos del Segmento 1; no es una probabilidad de default."
