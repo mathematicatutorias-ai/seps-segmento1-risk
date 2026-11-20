@@ -2374,7 +2374,7 @@
       "score": -0.6669154087748063,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 1.0667910466613177, \"robust_z\": 0.6669154087748063, \"window_months\": 24}",
-      "calculated_at": "2026-10-19T02:34:44.019825+00:00"
+      "calculated_at": "2026-11-20T03:42:51.240590+00:00"
     },
     {
       "cutoff_date": "2026-09-30",
@@ -2384,7 +2384,7 @@
       "score": -0.9783950020845641,
       "direction": "higher_bad",
       "detail": "{\"median_hist\": 0.0633434425242165, \"robust_z\": -0.9783950020845641, \"window_months\": 24}",
-      "calculated_at": "2026-10-19T02:34:44.019825+00:00"
+      "calculated_at": "2026-11-20T03:42:51.240590+00:00"
     },
     {
       "cutoff_date": "2026-09-30",
@@ -2394,7 +2394,7 @@
       "score": 1.6402770610616908,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.05435098261421867, \"robust_z\": -1.6402770610616908, \"window_months\": 24}",
-      "calculated_at": "2026-10-19T02:34:44.019825+00:00"
+      "calculated_at": "2026-11-20T03:42:51.240590+00:00"
     },
     {
       "cutoff_date": "2026-09-30",
@@ -2404,7 +2404,7 @@
       "score": 0.749527865606989,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.12896913601254462, \"robust_z\": -0.749527865606989, \"window_months\": 24}",
-      "calculated_at": "2026-10-19T02:34:44.019825+00:00"
+      "calculated_at": "2026-11-20T03:42:51.240590+00:00"
     },
     {
       "cutoff_date": "2026-09-30",
@@ -2414,7 +2414,7 @@
       "score": 0.08948870896393873,
       "direction": "lower_bad",
       "detail": "{\"median_hist\": 0.5771444845916943, \"robust_z\": -0.08948870896393873, \"window_months\": 24}",
-      "calculated_at": "2026-10-19T02:34:44.019825+00:00"
+      "calculated_at": "2026-11-20T03:42:51.240590+00:00"
     }
   ],
   "risk_estimates": [],
